@@ -4113,8 +4113,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: none;
 }
 .nav-justified > li > a {
-  margin-bottom: 5px;
   text-align: center;
+  color: #ffffff;
+  position: relative;
+  min-height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  /*background-color: #eeeeee;*/
+  border-radius: 4px;
 }
 .nav-justified > .dropdown .dropdown-menu {
   top: auto;
