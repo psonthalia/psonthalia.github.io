@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <script src="./dist/js/jquery-3.2.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="./dist/js/bootstrap.min.js"></script>
-	<script src="./dist/js/carousel.js"></script>
 
 	<head>
 		<title>Paran Sonthalia</title>
@@ -16,15 +12,15 @@
 
 	<body style = "max-width: 100%; overflow-x: hidden;">
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		      <ul class="nav navbar-nav navbar-right">
-				  <li style = "margin-left:2em;"><font size = "3">Paran Sonthalia</font></li>
-				  <li style = "margin-right:2em;"><a href="#aboutMe"><font size = "3">About Me</font></a></li>
-				  <li style = "margin-right:2em;"><a href="#portfolio"><font size = "3">Portfolio</font></a></li>
-				  <li style = "margin-right:2em;"><a href="#contactMe"><font size = "3">Contact Me</font></a></li>
-				  <li style = "margin-right:2em;"><a href="./photos.html"><font size = "3">Photos</font></a></li>
-				  <li><a href="http://www.mangoap.com"><font size = "3">Mango Apps</font></a></li>
-				  <li><a href="http://www.thexcelerate.wordpress.com"><font size = "3">Blog</font></a></li>
+            <div class="container-fluid">
+                <ul class="nav navbar-nav" style="display: inline-block; width: 100%">
+                    <li style = "size:5px; float: left; font-size: 23px"><a  href="#home">Paran Sonthalia</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#aboutMe">About Me</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#portfolio">Portfolio</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#contactMe">Contact Me</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="./photos.html">Photos</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="http://www.mangoap.com">Mango Apps</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="http://www.thexcelerate.wordpress.com">Blog</a></li>
 		      </ul>
 		    </div>
 		  </div>
@@ -32,8 +28,8 @@
 
 		<div style="height:85vh; width: 100%; background-color: #2081C3; ">
 			<br>
-			<center style = "color: #FFFFFF"><h1>Paran Sonthalia</h1></center>
-			<center style = "color: #FFFFFF"><p><font size = "5">Programmer, Developer, and High School Student</font></p></center>		
+            <a name = "home"><center style = "color: #FFFFFF"><h1>Paran Sonthalia</h1></center></a>
+			<center style = "color: #FFFFFF"><p><font size = "5">Programmer / Developer / Student</font></p></center>
 			<div style = "display: inline-block; width: 5%">
 				
 			</div>
@@ -47,11 +43,11 @@
 
 				<center><div class="carousel-inner">
 					<div class="item active" style = "max-width: 100%; max-height: 100vh;">
-						<img style="width: 100%; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
+						<img style="width: 80%; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
 					</div>
 
 					<div class="item" style = "max-width: 100%; max-height: 100vh;">
-						<img style="width: 100%; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
+						<img style="width: 80%; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
 					</div>
 				</div></center>
 
@@ -120,37 +116,39 @@
 			            	<center><img width = "30%" src="./dist/img/mtnViewArt.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Mountain View Art</h3></center>
 			                <center><div class="card-text" style = "color: black">
-			                    The app to find the public art in Mountain View
+			                    The app to find the public art in <br> Mountain View
 			                </div></center>
 			            </div>
 			        </div>
 			    </div></a>
 
-			    <div class="col-sm-6 col-md-4 col-lg-3" style = "">
+                <a href="./teender.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+                    <div class="card">
+                        <div class="card-block">
+                            <center><img width = "30%" src="./dist/img/teender.png" alt=""></center>
+                            <center><h3 class="card-title" style = "color: black">Teender</h3></center>
+                            <center><div class="card-text" style = "color: black">
+                                Teender is the social app for high schoolers to overcome social anxiety.
+                            </div></center>
+                        </div>
+                    </div>
+                </div></a>
+
+			    <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
 			        <div class="card">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/e-passes.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">E-Passes</h3></center>
 			                <center><div class="card-text" style = "color: black">
-			                    The app to store all of your passes to all events
-			                </div></center>
-			            </div>
-			        </div>
-			    </div>
-
-			    <a href="./teender.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
-			            <div class="card-block">
-			            	<center><img width = "30%" src="./dist/img/teender.png" alt=""></center>
-			                <center><h3 class="card-title" style = "color: black">Teender</h3></center>
-			                <center><div class="card-text" style = "color: black">
-			                    Teender is the social app for high schoolers to overcome social anxiety.
+			                    The app to store all of your passes to <br> all events
 			                </div></center>
 			            </div>
 			        </div>
 			    </div></a>
 
-			    <div class="col-sm-6 col-md-4 col-lg-3" style = "">
+
+
+                <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
 			        <div class="card">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/hyve.png" alt=""></center>
@@ -160,9 +158,9 @@
 			                </div></center>
 			            </div>
 			        </div>
-			    </div>
+			    </div></a>
 
-			    <div class="col-sm-6 col-md-4 col-lg-3" style = "">
+                <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
 			        <div class="card">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/piMessageBoard.png" alt=""></center>
@@ -172,7 +170,7 @@
 			                </div></center>
 			            </div>
 			        </div>
-			    </div>
+			    </div></a>
 
 			    <a href="http://mangoap.com/spikeballAttack2"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
 			        <div class="card">
@@ -222,7 +220,7 @@
 			        </div>
 			    </div></a>
 
-			    <div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			    <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
 			        <div class="card">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/easyStudy.png" alt=""></center>
@@ -232,7 +230,7 @@
 			                </div></center>
 			            </div>
 			        </div>
-			    </div>
+			    </div></a>
 
 			</div>
 		</div>
