@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="./dist/js/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 	<head>
 		<title>Paran Sonthalia</title>
@@ -231,21 +232,49 @@
 			            </div>
 			        </div>
 			    </div></a>
+			</div>
+			<br><br>
+		</div>
 
+		<a name = "contactMe"><div style="width: 100%; background-color: #D7B49E; position: relative; height: auto; min-height: 100% !important; overflow: auto; padding-bottom: 20px"></a>
+			<br>
+			<center style = "color: #FFFFFF"><h1>Get in Touch</h1></center>
+			<br>
+ 			<div style="width: 50%; float: right; display: inline-block; padding-left: 20px; padding-right: 20px">
+ 				<form id="contactForm">
+		            <input type="text" class="form-control" name="from_name" placeholder="Your Name">
+		            <br>
+		            <input type="text" class="form-control" name="from_email" placeholder="Email Address">
+		            <br>
+		            <textarea class="form-control" name="message_html" placeholder="Message" rows = 6></textarea>
+		            <br>
+  					<button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+		        </form>	
+ 			</div>
+
+ 			<div style="width: 50%; float: left; display: inline-block; padding-left: calc(25% - 140px)">
+ 				<br><br><br><br>
+				<a href="https://www.linkedin.com/in/paran-sonthalia-9bba3285/"><img src="./dist/img/linkedin.png" style="width: 40px; height: 36.6px; margin-right: 20px"></img></a>
+				<a href="https://github.com/psonthalia"><img src="./dist/img/github.png" style="width: 40px; height: 40px; margin-right: 20px"></img></a>
+				<a href="https://twitter.com/Psonthalia2000"><img src="./dist/img/twitter.png" style="width: 40px; height: 40px; margin-right: 20px"></img></a>
 			</div>
 		</div>
-
-		<a name = "contactMe"><div style="height:80vh; width: 100%; background-color: #D7B49E; position: relative; height: auto; min-height: 100% !important;"></a>
-			<br>
-			<center style = "color: #FFFFFF"><h1>Contact Me</h1></center>
-			<br>
-			<font size="5"><p style = "padding-right: 10%; padding-left: 10%">Email: <a href="paran.sonthalia@gmail.com"><font color="blue">paran.sonthalia@gmail.com</font></a></p></font>
-			<font size="5"><p style = "padding-right: 10%; padding-left: 10%">Linkedin: <a href="https://www.linkedin.com/in/paran-sonthalia-9bba3285/"><font color="blue">https://www.linkedin.com/in/paran-sonthalia-9bba3285/</font></a></p></font>
-			<font size="5"><p style = "padding-right: 10%; padding-left: 10%">Github: <a href="https://github.com/psonthalia"><font color="blue">https://github.com/psonthalia</font></a></p></font>
-			<font size="5"><p style = "padding-right: 10%; padding-left: 10%">Twitter: <a href="https://twitter.com/Psonthalia2000"><font color="blue">https://twitter.com/Psonthalia2000</font></a></p></font>
-			<br><br><br><br>
-		</div>
-
-
 	</body>
+
+	<script type="text/javascript">
+		(function(){
+	    	emailjs.init("user_8SDTGpmz3hI5RXlIyMZtH");
+	   	})();
+	   	var contactForm = $("form#contactForm");
+		contactForm.submit(function(event){
+			event.preventDefault();
+			emailjs.sendForm("default_service","portfolio_website_contact","contactForm")
+		  	.then(function(){ 
+		    	alert("Email Sent!");
+		    }, function(err) {
+		       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+		    });
+		    return false;
+		});
+	</script>
 </html>
