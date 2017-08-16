@@ -1,94 +1,72 @@
 <!DOCTYPE html>
+<style type="text/css">
+	.card a:hover {
+		background-color: blue;
+	}
+</style>
 <html>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="./dist/js/bootstrap.min.js"></script>
-	 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 	<head>
 		<title>Paran Sonthalia</title>
 	</head>
 
 	<body style = "max-width: 100%; overflow-x: hidden;">
-		<nav class="navbar navbar-default">
-            <div class="container-fluid">
+		<nav class="navbar navbar-default" style="margin-bottom: 0px; border: none; position: fixed; top: 0px; width: 100%; z-index: 100">
+            <div class="container-fluid" style="">
                 <ul class="nav navbar-nav" style="display: inline-block; width: 100%">
-                    <li style = "size:5px; float: left; font-size: 23px"><a  href="#home">Paran Sonthalia</a></li>
-                    <li style = "float: right; font-size: 13px"><a href="#aboutMe">About Me</a></li>
-                    <li style = "float: right; font-size: 13px"><a href="#portfolio">Portfolio</a></li>
-                    <li style = "float: right; font-size: 13px"><a href="#contactMe">Contact Me</a></li>
-                    <li style = "float: right; font-size: 13px"><a href="./photos.html">Photos</a></li>
-                    <li style = "float: right; font-size: 13px"><a href="http://www.mangoap.com">Mango Apps</a></li>
                     <li style = "float: right; font-size: 13px"><a href="http://www.thexcelerate.wordpress.com">Blog</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="http://www.mangoap.com">Mango Apps</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="./photos.html">Photos</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#contactMe">Contact</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#experience">Experience</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#portfolio">Portfolio</a></li>
+                    <li style = "float: right; font-size: 13px"><a href="#aboutMe">About Me</a></li>
+                    <li style = "float: left; font-size: 23px"><a  href="#home">Paran Sonthalia</a></li>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>
 
-        <a name = "home"><div style="height:85vh; width: 100%; background-color: #2081C3; "></a>
-			<br>
-            <center style = "color: #FFFFFF"><h1>Paran Sonthalia</h1></center>
-			<center style = "color: #FFFFFF"><p><font size = "5">Developer / Entrepreneur / Student</font></p></center>
-			<div style = "display: inline-block; width: 5%">
-				
+		<div style="height:80vh; width: 100%; background-color: #f4f4f4; padding-top: 100px">
+        	<a name = "home" style="display: block; position: absolute; top: -45px"></a>
+        	<div style="display: inline-block; width: 50%; padding-top: 13%; float: left;">
+            	<center style = "color: #000000 "><h2 style="font-weight:150">Paran Sonthalia</h2></center>
+				<center style = "color: #000000"><p><font size = "5" style="font-weight:150">Developer / Entrepreneur / Student</font></p></center>
 			</div>
-
-			<div id="myCarousel" class="carousel slide" data-ride="carousel" style = "max-width: 50%; display: inline-block;">
-
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-				</ol>
-
-				<center><div class="carousel-inner">
-					<div class="item active" style = "max-width: 100%; max-height: 100vh;">
-						<img style="width: 80%; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
-					</div>
-
-					<div class="item" style = "max-width: 100%; max-height: 100vh;">
-						<img style="width: 80%; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
-					</div>
-				</div></center>
-
-		  		<a class="left carousel-control" href = "#myCarousel" role="button" data-slide="prev" style = "background-image: none">
-		    		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    		<span class="sr-only">Previous</span>
-		  		</a>
-		  		<a class="right carousel-control" href = "#myCarousel" role="button" data-slide="next" style = "background-image: none">
-		    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    		<span class="sr-only">Next</span>
-		  		</a>
-			</div>
-
-
- 			<div style = "float:right; width: 40%; padding-top: 5%">
-				<center><img style = "width: 20%;" src="./dist/img/profile.png"></center>
-
-				<h3 style = "color: #FFFFFF; padding-left: 5%">Age: 16</h3>
-				<h3 style = "color: #FFFFFF; padding-left: 5%">Grade: 11</h3>
-				<h3 style = "color: #FFFFFF; padding-left: 5%">School: Mountain View High School</h3>
-				<h3 style = "color: #FFFFFF; padding-left: 5%">Company: Mango Apps</h3>
-				<a href="./Resume.pdf"><h4 style = "color: #1960d3; padding-left: 5%; display: inline-block; text-decoration: underline;">Resume</h4></a>
-				<a href="./Cover Letter.pdf"><h4 style = "color: #1960d3; padding-left: 5%; display: inline-block; text-decoration: underline;">Cover Letter</h4></a>
+			<div style="display: inline-block; width: 50%; float: right;">
+				<img style="width: 80vh; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/teaching.jpg">
 			</div>
 		</div>
 
+		<a name = "aboutMe" style="display: inline-block; margin-bottom: 45px"></a>
+		<div style="height:55vh; width: 100%; background-color: #292929">
+			<br><br><br>
+			<div style="display: inline-block; width: 50%; float: left;">
+				<img style="height: 45vh; border:0; margin-right: auto; margin-left: auto; display: block;" src="./dist/img/lambo.jpg">
+			</div>
+			<div style="display: inline-block; width: 50%; float: right;">
+				<center><h2 style="color: white;font-weight:150">About Me</h2></center>
+				<br>
+				<font size="5" style="font-weight:100"><p style = "padding-right: 10%; padding-left: 10%; color: white">I am a senior at Mountain View High School and I love programming new projects that always have some new technology in them. Outside of programming, I am very passionate about cars and I love new cars with all sorts of new engines, tech, interior, and more. I also run my own small business, Mango Apps, in which I hire high school students who are passionate to learn more about programming and we all work together to build a project over the summer. </p></font> 
 
-		<a name = "aboutMe"><div style="height:80vh; width: 100%; background-color: #001F54"></a>
-			<br>
-			<center style = "color: #000000"><h1>About Me</h1></center>
-			<br>
-			<font size="5"><p style = "padding-right: 10%; padding-left: 10%; color: white">I am a junior at Mountain View High School and I love programming new projects that always have some new technology in them. Outside of programming, I am very passionate about cars and I love new cars with all sorts of new engines, tech, interior, and more. </p></font> 
+				<center><a href="./Resume.pdf"><h4 style = "color: #1960d3; padding-left: 5%; display: inline-block; text-decoration: underline; font-weight:100"">Resume</h4></a>
+				<a href="./Cover Letter.pdf"><h4 style = "color: #1960d3; padding-left: 5%; display: inline-block; text-decoration: underline; font-weight:100"">Cover Letter</h4></a></center>
+			</div>
 		</div>
 
-		<a name = "portfolio"><div style="width: 100%; background-color: #B3001B; position: relative; height: auto; min-height: 100% !important;"></a>
+		<div style="width: 100%; background-color: #f4f4f4; position: relative; height: auto; min-height: 100% !important;">
+			<a name = "portfolio" style="display: block; position: absolute; top: -45px"></a>
 			<br>
-			<center style = "color: #FFFFFF"><h1>Portfolio</h1></center>
+			<center style = "color: #000000"><h2>Portfolio</h2></center>
 			<div class="row" style = "padding-left: 2%; padding-right: 2%">
 			    <a href="./auxiliumHealth.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/auxiliumHealth.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Auxilium Health</h3></center>
@@ -100,7 +78,7 @@
 			    </div></a>
 
 			    <a href = "./minuteTutor.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/minuteTutor.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Minute Tutor</h3></center>
@@ -112,7 +90,7 @@
 			    </div></a>
 
 			    <a href="./mtnViewArt.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/mtnViewArt.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Mountain View Art</h3></center>
@@ -124,7 +102,7 @@
 			    </div></a>
 
                 <a href="./teender.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-                    <div class="card">
+                    <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
                         <div class="card-block">
                             <center><img width = "30%" src="./dist/img/teender.png" alt=""></center>
                             <center><h3 class="card-title" style = "color: black">Teender</h3></center>
@@ -136,7 +114,7 @@
                 </div></a>
 
 			    <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/e-passes.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">E-Passes</h3></center>
@@ -150,7 +128,7 @@
 
 
                 <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/hyve.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Hyve</h3></center>
@@ -162,7 +140,7 @@
 			    </div></a>
 
                 <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/piMessageBoard.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Pi Message Board</h3></center>
@@ -174,7 +152,7 @@
 			    </div></a>
 
 			    <a href="http://mangoap.com/spikeballAttack2"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/spikeballAttack2.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Spikeball Attack 2</h3></center>
@@ -186,7 +164,7 @@
 			    </div></a>
 
 			   <a href="http://mangoap.com/spikeballAttack"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/spikeballAttack.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Spikeball Attack</h3></center>
@@ -198,7 +176,7 @@
 			    </div></a>
 
 			    <a href="http://mangoap.com/petNoises"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/petNoises.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Pet Noises</h3></center>
@@ -210,7 +188,7 @@
 			    </div></a>
 
 			    <a href="http://mangoap.com/bestBlogs"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/bestBlogs.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Best Blogs</h3></center>
@@ -222,7 +200,7 @@
 			    </div></a>
 
 			    <a><div class="col-sm-6 col-md-4 col-lg-3" style = "">
-			        <div class="card">
+			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/easyStudy.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Easy Study</h3></center>
@@ -236,9 +214,138 @@
 			<br><br>
 		</div>
 
-		<a name = "contactMe"><div style="width: 100%; background-color: #D7B49E; position: relative; height: auto; min-height: 100% !important; overflow: auto; padding-bottom: 20px"></a>
+
+		<div style="width: 100%; background-color: #FFFFFF; position: relative; height: auto; min-height: 100% !important;">
+			<a name = "experience" style="display: block; position: absolute; top: -45px"></a>
 			<br>
-			<center style = "color: #FFFFFF"><h1>Get in Touch</h1></center>
+			<center style = "color: #000000"><h2>Work/Volunteer Experience</h2></center>
+			<br>
+			<div class="row" style = "padding-left: 2%; padding-right: 2%;">
+			    <a href="http://www.leandatainc.com"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "17%" src="./dist/img/leanData.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">LeanData</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I designed and developed multiple new capabilites on LeanData's product
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href = "http://www.erpamerica.com"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "60%" src="./dist/img/erpAmerica.png"></center>
+			                <center><h3 class="card-title" style = "color: black">ERP America</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I created and now maintain the company website
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="https://techlab.education"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "19%" src="./dist/img/techlab.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Techlab Education</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I taught an iOS app development class during summer
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="http://www.little-champs.net"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "64%" src="./dist/img/littleChamps.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Little Champs</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I taught a one-week summer camp to 15 students
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="http://www.troop103losaltos.org"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "15%" src="./dist/img/boyScouts.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Webmaster for Troop 103</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I created a new website for my troop to organize all resources
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="https://www.oracle.com/java/javaone4kids.html"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "60%" src="./dist/img/javaone.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Oracle JavaOne4Kids</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I taught 100 young disadvantaged students how to develop games using Java
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="https://www.siliconvalley-codecamp.com"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "31%" src="./dist/img/svcc.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Silicon Valley Code Camp</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I have been teaching at Silicon Valley Code Camp for the past four years
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="https://coderdojo.com"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "17%" src="./dist/img/coderDojo.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Silicon Valley CoderDojo</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                I taught a few two-day classes on multiple different topics
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="http://www.devoxx4kids.org"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "50%" src="./dist/img/devoxx4kids.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Devoxx4Kids</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I lead various classes on iOS App Development
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
+			    <a href="http://mvla.net/mvhs"><div class="col-sm-6 col-md-4 col-lg-3" style = "">
+			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			            <div class="card-block">
+			            	<center><img width = "30%" src="./dist/img/mvhs.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">CompSci help at MVHS</h3></center>
+			                <center><div class="card-text" style = "color: black">
+			                    I help AP computer science students with their computer science labs
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+			<br><br>
+		</div>
+		
+
+		<div style="width: 100%; background-color: #f4f4f4; position: relative; height: auto; min-height: 100% !important; overflow: auto; padding-bottom: 20px">
+			<a name = "contactMe" style="display: block; position: absolute; top: -45px"></a>
 			<br>
  			<div style="width: 50%; float: right; display: inline-block; padding-left: 20px; padding-right: 20px">
  				<form id="contactForm">
@@ -253,6 +360,7 @@
  			</div>
 
  			<div style="width: 50%; float: left; display: inline-block; padding-left: calc(25% - 140px)">
+ 				<h2 style = "color: #000000">Get in Touch</h2>
  				<br><br><br><br>
 				<a href="https://www.linkedin.com/in/paran-sonthalia-9bba3285/"><img src="./dist/img/linkedin.png" style="width: 40px; height: 36.6px; margin-right: 20px"></img></a>
 				<a href="https://github.com/psonthalia"><img src="./dist/img/github.png" style="width: 40px; height: 40px; margin-right: 20px"></img></a>
