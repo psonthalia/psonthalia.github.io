@@ -78,6 +78,18 @@
 		        padding-right: 20px;
 		    }
 		}
+		@media only screen {
+		    #experienceCard {
+		        height: 200px;
+		        width: 380px;
+		    }
+		}
+		@media only screen {
+		    #portfolioCard {
+		        height: 230px;
+		        width: 380px;
+		    }
+		}
 	</style>
 
 	<head>
@@ -103,7 +115,9 @@
 			        <ul class="nav navbar-nav navbar-right">
 			        	<li style = "font-size: 13px"><a href="#aboutMe">About Me</a></li>
 			       		<li style = "font-size: 13px"><a href="#portfolio">Portfolio</a></li>
-			            <li style = "font-size: 13px"><a href="#experience">Experience</a></li>
+			            <li style = "font-size: 13px"><a href="#work">Work Experience</a></li>
+						<li style = "font-size: 13px"><a href="#volunteer">Volunteer Experience</a></li>
+						<li style = "font-size: 13px"><a href="#examples">Examples</a></li>
 			            <li style = "font-size: 13px"><a href="#contactMe">Contact</a></li>
 			            <li style = "font-size: 13px"><a href="./photos.html">Photos</a></li>
 			            <li style = "font-size: 13px"><a href="http://www.mangoap.com">Mango Apps</a></li>
@@ -147,7 +161,7 @@
 			<center style = "color: #000000"><h2>Portfolio</h2></center>
 			<div class="row" style = "padding-left: 2%; padding-right: 2%">
 			    <a href="./auxiliumHealth.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/auxiliumHealth.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Auxilium Health</h3></center>
@@ -159,7 +173,7 @@
 			    </div></a>
 
 			    <a href = "./minuteTutor.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/minuteTutor.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Minute Tutor</h3></center>
@@ -171,7 +185,7 @@
 			    </div></a>
 
 			    <a href="./mtnViewArt.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/mtnViewArt.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Mountain View Art</h3></center>
@@ -183,7 +197,7 @@
 			    </div></a>
 
                 <a href="./teender.html"><div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+                    <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
                         <div class="card-block">
                             <center><img width = "30%" src="./dist/img/teender.png" alt=""></center>
                             <center><h3 class="card-title" style = "color: black">Teender</h3></center>
@@ -195,7 +209,7 @@
                 </div></a>
 
 			    <a><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/e-passes.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">E-Passes</h3></center>
@@ -206,10 +220,8 @@
 			        </div>
 			    </div></a>
 
-
-
                 <a><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/hyve.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Hyve</h3></center>
@@ -221,7 +233,7 @@
 			    </div></a>
 
                 <a><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/piMessageBoard.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Pi Message Board</h3></center>
@@ -233,7 +245,7 @@
 			    </div></a>
 
 			    <a href="http://mangoap.com/spikeballAttack2"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/spikeballAttack2.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Spikeball Attack 2</h3></center>
@@ -245,7 +257,7 @@
 			    </div></a>
 
 			   <a href="http://mangoap.com/spikeballAttack"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/spikeballAttack.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Spikeball Attack</h3></center>
@@ -257,7 +269,7 @@
 			    </div></a>
 
 			    <a href="http://mangoap.com/petNoises"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/petNoises.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Pet Noises</h3></center>
@@ -269,7 +281,7 @@
 			    </div></a>
 
 			    <a href="http://mangoap.com/bestBlogs"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/bestBlogs.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Best Blogs</h3></center>
@@ -281,7 +293,7 @@
 			    </div></a>
 
 			    <a><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			        <div class="card" id="portfolioCard" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/easyStudy.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Easy Study</h3></center>
@@ -297,13 +309,12 @@
 
 
 		<div style="width: 100%; background-color: #FFFFFF; position: relative; height: auto; min-height: 100% !important;">
-			<a name = "experience" style="display: block; position: absolute; top: -45px"></a>
+			<a name = "work" style="display: block; position: absolute; top: -45px"></a>
 			<br>
-			<center style = "color: #000000"><h2>Work/Volunteer Experience</h2></center>
-			<br>
+			<center style = "color: #000000"><h2>Work Experience</h2></center>
 			<div class="row" style = "padding-left: 2%; padding-right: 2%;">
 			    <a href="http://www.leandatainc.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
 			            <div class="card-block">
 			            	<center><img width = "17%" src="./dist/img/leanData.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">LeanData</h3></center>
@@ -315,7 +326,7 @@
 			    </div></a>
 
 			    <a href = "http://www.erpamerica.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
 			            <div class="card-block">
 			            	<center><img width = "60%" src="./dist/img/erpAmerica.png"></center>
 			                <center><h3 class="card-title" style = "color: black">ERP America</h3></center>
@@ -327,7 +338,7 @@
 			    </div></a>
 
 			    <a href="https://techlab.education"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
 			            <div class="card-block">
 			            	<center><img width = "19%" src="./dist/img/techlab.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Techlab Education</h3></center>
@@ -339,7 +350,7 @@
 			    </div></a>
 
 			    <a href="http://www.little-champs.net"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
 			            <div class="card-block">
 			            	<center><img width = "64%" src="./dist/img/littleChamps.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Little Champs</h3></center>
@@ -349,21 +360,18 @@
 			            </div>
 			        </div>
 			    </div></a>
+			</div>
+			<br>
+		</div>
 
-			    <a href="http://www.troop103losaltos.org"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
-			            <div class="card-block">
-			            	<center><img width = "15%" src="./dist/img/boyScouts.png" alt=""></center>
-			                <center><h3 class="card-title" style = "color: black">Webmaster for Troop 103</h3></center>
-			                <center><div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I created a new website for my troop to organize all resources
-			                </div></center>
-			            </div>
-			        </div>
-			    </div></a>
 
-			    <a href="https://www.oracle.com/java/javaone4kids.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+		<div style="width: 100%; background-color: #f4f4f4; position: relative; height: auto; min-height: 100% !important;">
+			<a name = "volunteer" style="display: block; position: absolute; top: -45px"></a>
+			<br>
+			<center style = "color: #000000"><h2>Volunteer Experience</h2></center>
+			<div class="row" style = "padding-left: 2%; padding-right: 2%;">
+				<a href="https://www.oracle.com/java/javaone4kids.html"><div class="col-sm-6 col-md-4 col-lg-3">
+			        <div class="card" id="experienceCard" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "60%" src="./dist/img/javaone.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Oracle JavaOne4Kids</h3></center>
@@ -374,8 +382,20 @@
 			        </div>
 			    </div></a>
 
+			    <a href="http://www.troop103losaltos.org"><div class="col-sm-6 col-md-4 col-lg-3">
+			        <div class="card" id="experienceCard" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+			            <div class="card-block">
+			            	<center><img width = "15%" src="./dist/img/boyScouts.png" alt=""></center>
+			                <center><h3 class="card-title" style = "color: black">Webmaster for Troop 103</h3></center>
+			                <center><div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+			                    I created a new website for my troop to organize all resources
+			                </div></center>
+			            </div>
+			        </div>
+			    </div></a>
+
 			    <a href="https://www.siliconvalley-codecamp.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "31%" src="./dist/img/svcc.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Silicon Valley Code Camp</h3></center>
@@ -387,7 +407,7 @@
 			    </div></a>
 
 			    <a href="https://coderdojo.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "17%" src="./dist/img/coderDojo.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Silicon Valley CoderDojo</h3></center>
@@ -399,7 +419,7 @@
 			    </div></a>
 
 			    <a href="http://mvla.net/mvhs"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "30%" src="./dist/img/mvhs.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">CompSci help at MVHS</h3></center>
@@ -411,7 +431,7 @@
 			    </div></a>
 
 			    <a href="http://www.devoxx4kids.org"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+			        <div class="card" id="experienceCard" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
 			            <div class="card-block">
 			            	<center><img width = "50%" src="./dist/img/devoxx4kids.png" alt=""></center>
 			                <center><h3 class="card-title" style = "color: black">Devoxx4Kids</h3></center>
@@ -421,9 +441,28 @@
 			            </div>
 			        </div>
 			    </div></a>
-			<br><br>
+			</div>
+			<br>
 		</div>
 		
+		<div style="width: 100%; background-color: #FFFFFF; position: relative; height: auto; min-height: 100% !important; overflow: auto; padding-bottom: 20px;">
+			<a name = "examples" style="display: block; position: absolute; top: -45px"></a>
+			<br>
+			<center style = "color: #000000"><h2>Examples</h2></center>
+
+			<center><img src="./dist/img/work1.png" style="width: 340px; height: 200px; padding-left: 20px" />
+			<img src="./dist/img/work2.png" style="width: 340px; height: 200px; padding-left: 20px" />
+			<img src="./dist/img/work3.png" style="width: 340px; height: 200px; padding-left: 20px" />
+			<br><br>
+			<img src="./dist/img/work4.png" style="width: 225px; height: 400px; padding-left: 20px" />
+			<img src="./dist/img/work5.png" style="width: 225px; height: 400px; padding-left: 20px" />
+			<img src="./dist/img/work6.png" style="width: 225px; height: 400px; padding-left: 20px" /></center>
+
+
+			<br><br>
+			<center><a href="./photos.html"><h4 style = "color: #1960d3; text-decoration: underline; font-weight:100"">See more</h4></a></center>
+		</div>
+
 
 		<div style="width: 100%; background-color: #f4f4f4; position: relative; height: auto; min-height: 100% !important; overflow: auto; padding-bottom: 20px">
 			<a name = "contactMe" style="display: block; position: absolute; top: -45px"></a>
