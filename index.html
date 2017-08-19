@@ -8,7 +8,7 @@
 
 	<head>
 		<title>Paran Sonthalia</title>
-		
+
 		<link rel="icon" href="mangoappsfavicon.ico" type="image/x-icon" />
 		<link rel="shortcut icon" href="mangoappsfavicon.ico" type="image/x-icon" />
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -408,22 +408,22 @@
 		        </form>	
  			</div>
 		</div>
-	</body>
 
-	<script type="text/javascript">
-		(function(){
-	    	emailjs.init("user_8SDTGpmz3hI5RXlIyMZtH");
-	   	})();
-	   	var contactForm = $("form#contactForm");
-		contactForm.submit(function(event){
-			event.preventDefault();
-			emailjs.sendForm("default_service","portfolio_website_contact","contactForm")
-		  	.then(function(){ 
-		    	alert("Email Sent!");
-		    }, function(err) {
-		       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-		    });
-		    return false;
-		});
-	</script>
+		<script type="text/javascript">
+			(function(){
+		    	emailjs.init("user_8SDTGpmz3hI5RXlIyMZtH");
+		   	})();
+		   	var contactForm = $("form#contactForm");
+			contactForm.submit(function(event){
+				event.preventDefault();
+				emailjs.sendForm("default_service","portfolio_website_contact","contactForm")
+			  	.then(function(){ 
+			    	alert("Email Sent!");
+			    }, function(err) {
+			       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+			    });
+			    return false;
+			});
+		</script>
+	</body>
 </html>
