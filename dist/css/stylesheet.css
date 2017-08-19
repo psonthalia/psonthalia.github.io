@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1026px) {
+    #leftNav {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1026px) {
+    #leftDiv {
+        width: 100%;
+        float: left;
+    }
+}
+@media only screen and (max-width: 1026px) {
+    #leftDiv1 {
+        width: 100%;
+        float: left;
+    }
+}
+@media only screen and (max-width: 1026px) {
+    #leftDiv2 {
+        width: 100%;
+        float: left;
+    }
+}
+@media only screen and (max-width: 1026px) {
+    .rightDiv {
+        width: 100%;
+        float: right;
+    }
+}
+@media only screen and (max-width: 1026px) {
+    #rightDiv2 {
+        width: 100%;
+        float: right;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (min-width: 1026px) {
+    #leftDiv {
+        width: 50%;
+        float: left;
+    }
+}
+@media only screen and (min-width: 1026px) {
+    #leftDiv1 {
+        width: 50%;
+        float: left;
+        padding-top: 13%;
+    }
+}
+@media only screen and (min-width: 1026px) {
+    #leftDiv2 {
+        width: 50%;
+        float: left;
+    }
+}
+@media only screen and (min-width: 1026px) {
+    .rightDiv {
+    	width: 50%;
+    	float: right;
+    }
+}
+@media only screen and (min-width: 1026px) {
+    #rightDiv2 {
+        width: 50%;
+        float: right;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen {
+    .card experience {
+        height: 200px;
+        width: 380px;
+    }
+}
+@media only screen {
+    .card portfolio {
+        height: 230px;
+        width: 380px;
+    }
+}
