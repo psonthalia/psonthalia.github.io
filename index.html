@@ -398,11 +398,11 @@
 			</div>
 			<div id="rightDiv2">
  				<form id="contactForm">
-		            <input class="form-control" name="from_name" placeholder="Your Name">
+		            <input class="form-control" name="from_name" placeholder="Your Name*">
 		            <br>
-		            <input class="form-control" name="from_email" placeholder="Email Address">
+		            <input class="form-control" name="from_email" placeholder="Email Address*">
 		            <br>
-		            <textarea class="form-control" name="message_html" placeholder="Message" rows = 6></textarea>
+		            <textarea class="form-control" name="message_html" placeholder="Message*" rows = 6></textarea>
 		            <br>
   					<button class="btn btn-primary">Submit</button>
 		        </form>	
@@ -414,16 +414,21 @@
 		    	emailjs.init("user_8SDTGpmz3hI5RXlIyMZtH");
 		   	})();
 		   	var contactForm = $("form#contactForm");
-			contactForm.submit(function(event){
-				event.preventDefault();
-				emailjs.sendForm("default_service","portfolio_website_contact","contactForm")
-			  	.then(function(){ 
-			    	alert("Email Sent!");
-			    }, function(err) {
-			       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-			    });
-			    return false;
-			});
+		   	contactForm.submit(function(event){
+		   		if($("[name=from_name]").val() != "" && $("[name=from_email]").val() != "" && $("[name=message_html]").val() != "") {
+					event.preventDefault();
+					emailjs.sendForm("default_service","portfolio_website_contact","contactForm")
+				  	.then(function(){ 
+				    	alert("Email Sent!");
+				    }, function(err) {
+				       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+				    });
+				    return false;
+		   		}
+		   		else {
+			   		alert("Please fill in all fields");
+			   	}
+		   	});
 		</script>
 	</body>
 </html>
