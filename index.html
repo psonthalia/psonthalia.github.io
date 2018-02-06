@@ -29,10 +29,12 @@
 	    <meta name="description" content="Paran Sonthalia | Personal Website">
 	    <link rel="stylesheet" href="./dist/css/stylesheet.css" />
 		<meta name="google-site-verification" content="uLCN8zl5oHxC3GSIb208zi5re45FlaqlcEEydFtcmOw" />
+		<script src="./dist/js/jquery.localscroll.js" type="text/javascript"></script>
+		<script src="./dist/js/jquery.scrollTo.js" type="text/javascript"></script>
 	</head>
 
 	<body style = "width: 100%; margin-left: 0; margin-right: 0">
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top" id="nav">
 		    <div class="container">
 		        <div class="navbar-header">
 		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -451,6 +453,11 @@
 			   		alert("Please fill in all fields");
 			   	}
 		   	});
+		</script>
+		<script type="text/javascript">
+		   $(document).ready(function() {
+		      $('#nav').localScroll({duration:800});
+		   });
 		</script>
 	</body>
 </html>
