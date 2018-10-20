@@ -21,8 +21,8 @@
 		<link rel="icon" href="mangoappsfavicon.ico" type="image/x-icon" />
 		<link rel="shortcut icon" href="mangoappsfavicon.ico" type="image/x-icon" />
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,30 +47,40 @@
 	</head>
 
 	<body style = "width: 100%; margin-left: 0; margin-right: 0">
-		<nav class="navbar navbar-default navbar-fixed-top" id="nav">
-		    <div class="container">
-		        <div class="navbar-header">
-		            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>                      
-		            </button>
-		        </div>
-		        <div class="collapse navbar-collapse" id="myNavbar" style="width: 100%;">
-		        	<ul class="nav navbar-nav navbar-left" id="lefNav" style="position: absolute; left: 100px;">
-			            <li style = "font-size: 23px" id="leftNav"><a title="" href="#home">Paran Sonthalia</a></li>
-			        </ul>
-			        <ul class="nav navbar-nav navbar-right" style="position: absolute; right: 100px;">
-			        	<li style = "font-size: 13px"><a title="" href="#aboutMe">About Me</a></li>
-			       		<li style = "font-size: 13px"><a title="" href="#portfolio">Portfolio</a></li>
-			            <li style = "font-size: 13px"><a title="" href="#work">Experience</a></li>
-			            <li style = "font-size: 13px"><a title="" href="#contactMe">Contact</a></li>
-			         	<li style = "font-size: 13px"><a title="" href="./tutorials.html">Tutorials</a></li>
-			            <li style = "font-size: 13px"><a title="" href="./photos.html">Photos</a></li>
-			            <li style = "font-size: 13px"><a title="" href="http://www.mangoap.com">Mango Apps</a></li>
-			        </ul>
-		        </div>
-		    </div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="./index.html#home">Paran Sonthalia</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto"></ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <ul class="navbar-nav mr-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#aboutMe">About Me</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#portfolio">Portfolio</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#experience">Experience</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#contactMe">Contact</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="./tutorials.html">Tutorials</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="./photos.html">Photos</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="http://www.mangoap.com">Mango Apps</a>
+			      </li>
+			  </ul>
+		    </form>
+		  </div>
 		</nav>
 
 		<div style="width: 100%; background-color: #f4f4f4; padding-top: 100px; padding-bottom: 20px; overflow: auto;">
@@ -105,188 +115,223 @@
 			<a title="" id = "portfolio" style="display: block; position: absolute; top: -45px"></a>
 			<br>
 			<h2 style = "color: #000000; text-align: center;">Portfolio</h2>
-			<div class="row" style = "padding-left: 2%; padding-right: 2%; text-align: center">
-				<a title="" href="https://collegeappplanner.com" target="_blank"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/collegeAppPlanner.png" />
-			                <h3 class="card-title" style = "color: black">College App Planner</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The free and easy way to plan your college apps and not miss a deadline
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
+			<div style = "padding-left: 2%; padding-right: 2%; text-align: center">
+				<div class="table-responsive">
+				  <table class="table">
+				  	<tbody>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="https://collegeappplanner.com" target="_blank"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/collegeAppPlanner.png" />
+							                <h3 class="card-title" style = "color: black">College App Planner</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The free and easy way to plan your college apps and not miss a deadline
+							                </div>
+							            </div>
+							        </div>
+						    	</div></a>
+					    	</td>
+					    	<td>
+					    		<a title="" href="https://devpost.com/software/robotany"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+											<img alt="" style="width:100px; float: right" src="./dist/img/first.png" />
+							            	<img alt="" style="width:30%" src="./dist/img/robotany.png" />
+							                <h3 class="card-title" style = "color: black">RoBotany</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    RoBotany equips the movement for environmental neutrality with modern technology.
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+					    	</td>
+					    	<td>
+					    		<a title="" href="https://devpost.com/software/droid-control"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							      			<img alt="" style="width:100px; float: right" src="./dist/img/third.png" />
+							            	<img alt="" style="width:30%" src="./dist/img/droidcontrol.png" />
+							                <h3 class="card-title" style = "color: black">Droid Control</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                	An approach to programming education that uses augmented reality to make learning more interactive and entertaining.
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+					    	</td>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="./auxiliumHealth.html"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/auxiliumHealth.png" />
+							                <h3 class="card-title" style = "color: black">Auxilium Health</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The quickest, easiest app for medication reminders
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href = "./minuteTutor.html"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/minuteTutor.png" />
+							                <h3 class="card-title" style = "color: black">Minute Tutor</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    Tutors on demand, video chat with a tutor when you need one!
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="./mtnViewArt.html"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/mtnViewArt.png" />
+							                <h3 class="card-title" style = "color: black">Mountain View Art</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The app to find the public art in Mountain View
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="./teender.html"><div style="min-width: 500px; max-width: 1000px">
+				                    <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+				                        <div class="card-block">
+				                            <img alt="" style="width:30%" src="./dist/img/teender.png" />
+				                            <h3 class="card-title" style = "color: black">Teender</h3>
+				                            <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+				                                Teender is the social app for high schoolers to overcome social anxiety.
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div></a>
+				  			</td>
+				  			<td>
+				  				<a title=""><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/e-passes.png" />
+							                <h3 class="card-title" style = "color: black">E-Passes</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The app to store all of your passes to all events
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title=""><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/hyve.png" />
+							                <h3 class="card-title" style = "color: black">Hyve</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The app to keep in touch with all of your clubs at school
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				<a title=""><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/piMessageBoard.png" />
+							                <h3 class="card-title" style = "color: black">Pi Message Board</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    Never miss anyone at your door with Pi Message Board
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://mangoap.com/spikeballAttack2"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/spikeballAttack2.png" />
+							                <h3 class="card-title" style = "color: black">Spikeball Attack 2</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The sequel to the highly successful Spikeball Attack
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://mangoap.com/spikeballAttack"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/spikeballAttack.png" />
+							                <h3 class="card-title" style = "color: black">Spikeball Attack</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The addicting game to keep the jewel safe from the spikeball
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="http://mangoap.com/petNoises"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/petNoises.png" />
+							                <h3 class="card-title" style = "color: black">Pet Noises</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    Never let your pets get bored again with Pet Noises
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://mangoap.com/bestBlogs"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/bestBlogs.png" />
+							                <h3 class="card-title" style = "color: black">Best Blogs</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    The app to find the blogs that are best for your taste
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title=""><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card portfolio">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/easyStudy.png" />
+							                <h3 class="card-title" style = "color: black">Easy Study</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    Study for all of your classes at once with Easy Study
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  		
+				  	</tbody>
+				    
 
-			    <a title="" href="https://devpost.com/software/robotany"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			      		<img alt="" style="width:20%; float: right" src="./dist/img/first.png" />
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/robotany.png" />
-			                <h3 class="card-title" style = "color: black">RoBotany</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    RoBotany equips the movement for environmental neutrality with modern technology.
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="https://devpost.com/software/droid-control"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			      		<img alt="" style="width:20%; float: right" src="./dist/img/third.png" />
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/droidcontrol.png" />
-			                <h3 class="card-title" style = "color: black">Droid Control</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                	An approach to programming education that uses augmented reality to make learning more interactive and entertaining.
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="./auxiliumHealth.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/auxiliumHealth.png" />
-			                <h3 class="card-title" style = "color: black">Auxilium Health</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The quickest, easiest app for medication reminders
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href = "./minuteTutor.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/minuteTutor.png" />
-			                <h3 class="card-title" style = "color: black">Minute Tutor</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    Tutors on demand, video chat with a tutor when you need one!
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="./mtnViewArt.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/mtnViewArt.png" />
-			                <h3 class="card-title" style = "color: black">Mountain View Art</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The app to find the public art in Mountain View
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-                <a title="" href="./teender.html"><div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-                        <div class="card-block">
-                            <img alt="" style="width:30%" src="./dist/img/teender.png" />
-                            <h3 class="card-title" style = "color: black">Teender</h3>
-                            <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-                                Teender is the social app for high schoolers to overcome social anxiety.
-                            </div>
-                        </div>
-                    </div>
-                </div></a>
-
-			    <a title=""><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/e-passes.png" />
-			                <h3 class="card-title" style = "color: black">E-Passes</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The app to store all of your passes to all events
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-                <a title=""><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/hyve.png" />
-			                <h3 class="card-title" style = "color: black">Hyve</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The app to keep in touch with all of your clubs at school
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-                <a title=""><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/piMessageBoard.png" />
-			                <h3 class="card-title" style = "color: black">Pi Message Board</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    Never miss anyone at your door with Pi Message Board
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://mangoap.com/spikeballAttack2"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/spikeballAttack2.png" />
-			                <h3 class="card-title" style = "color: black">Spikeball Attack 2</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The sequel to the highly successful Spikeball Attack
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			   <a title="" href="http://mangoap.com/spikeballAttack"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/spikeballAttack.png" />
-			                <h3 class="card-title" style = "color: black">Spikeball Attack</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The addicting game to keep the jewel safe from the spikeball
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://mangoap.com/petNoises"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/petNoises.png" />
-			                <h3 class="card-title" style = "color: black">Pet Noises</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    Never let your pets get bored again with Pet Noises
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://mangoap.com/bestBlogs"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/bestBlogs.png" />
-			                <h3 class="card-title" style = "color: black">Best Blogs</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    The app to find the blogs that are best for your taste
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title=""><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card portfolio">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/easyStudy.png" />
-			                <h3 class="card-title" style = "color: black">Easy Study</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    Study for all of your classes at once with Easy Study
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
+				  </table>
+				</div>
 			</div>
 			<br><br>
 		</div>
@@ -296,68 +341,87 @@
 			<a title="" id = "work" style="display: block; position: absolute; top: -45px"></a>
 			<br>
 			<h2 style = "color: #000000; text-align: center">Work Experience</h2>
-			<div class="row" style = "padding-left: 2%; padding-right: 2%; text-align: center">
-				<a title="" href="https://mv-hacks.com/"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
-			            <div class="card-block">
-			            	<img alt="" style="width:19%" src="./dist/img/mvhacks.png" />
-			                <h3 class="card-title" style = "color: black">MVHacks</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    My team and I gathered sponsors, mentors, judges, and planned the event.
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://www.leandatainc.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
-			            <div class="card-block">
-			            	<img alt="" style="width:17%" src="./dist/img/leanData.png" />
-			                <h3 class="card-title" style = "color: black">LeanData</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I designed and developed multiple new capabilites on LeanData's product
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href = "http://www.erpamerica.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
-			            <div class="card-block">
-			            	<img alt="" style="width:60%" src="./dist/img/erpAmerica.png" />
-			                <h3 class="card-title" style = "color: black">ERP America</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I created and now maintain the company website
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="https://techlab.education"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
-			            <div class="card-block">
-			            	<img alt="" style="width:19%" src="./dist/img/techlab.png" />
-			                <h3 class="card-title" style = "color: black">Techlab Education</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I taught an iOS app development class during summer
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://www.little-champs.net"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
-			            <div class="card-block">
-			            	<img alt="" style="width:64%" src="./dist/img/littleChamps.png" />
-			                <h3 class="card-title" style = "color: black">Little Champs</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I taught a one-week summer camp to 15 students
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
+			<div style = "padding-left: 2%; padding-right: 2%; text-align: center">
+				<div class="table-responsive">
+				  <table class="table">
+				  	<tbody>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="https://mv-hacks.com/"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+							            <div class="card-block">
+							            	<img alt="" style="width:19%" src="./dist/img/mvhacks.png" />
+							                <h3 class="card-title" style = "color: black">MVHacks</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    My team and I gathered sponsors, mentors, judges, and planned the event.
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://www.leandatainc.com"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+							            <div class="card-block">
+							            	<img alt="" style="width:17%" src="./dist/img/leanData.png" />
+							                <h3 class="card-title" style = "color: black">LeanData</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I designed and developed multiple new capabilites on LeanData's product
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href = "http://www.erpamerica.com"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+							            <div class="card-block">
+							            	<img alt="" style="width:60%" src="./dist/img/erpAmerica.png" />
+							                <h3 class="card-title" style = "color: black">ERP America</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I created and now maintain the company website
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="https://techlab.education"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+							            <div class="card-block">
+							            	<img alt="" style="width:19%" src="./dist/img/techlab.png" />
+							                <h3 class="card-title" style = "color: black">Techlab Education</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I taught an iOS app development class during summer
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://www.little-champs.net"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #f4f4f4" onmouseover="this.style.background='white';" onmouseout="this.style.background='#f4f4f4';">
+							            <div class="card-block">
+							            	<img alt="" style="width:64%" src="./dist/img/littleChamps.png" />
+							                <h3 class="card-title" style = "color: black">Little Champs</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I taught a one-week summer camp to 15 students
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				
+				  			</td>
+				  		</tr>
+				  	</tbody>
+				  </table>
+				</div>
 			</div>
-			<br>
+			<br />
 		</div>
 
 
@@ -365,78 +429,95 @@
 			<a title="" id = "volunteer" style="display: block; position: absolute; top: -45px"></a>
 			<br>
 			<h2 style="color: #000000; text-align: center">Volunteer Experience</h2>
-			<div class="row" style = "padding-left: 2%; padding-right: 2%; text-align: center;">
-				<a title="" href="https://www.oracle.com/java/javaone4kids.html"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:60%" src="./dist/img/javaone.png" />
-			                <h3 class="card-title" style = "color: black">Oracle JavaOne4Kids</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I taught 100 young disadvantaged students how to develop games using Java
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://www.troop103losaltos.org"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:15%" src="./dist/img/boyScouts.png" />
-			                <h3 class="card-title" style = "color: black">Webmaster for Troop 103</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I created a new website for my troop to organize all resources
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="https://www.siliconvalley-codecamp.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:31%" src="./dist/img/svcc.png" />
-			                <h3 class="card-title" style = "color: black">Silicon Valley Code Camp</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I have been teaching at Silicon Valley Code Camp for the past four years
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="https://coderdojo.com"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:17%" src="./dist/img/coderDojo.png" />
-			                <h3 class="card-title" style = "color: black">Silicon Valley CoderDojo</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                I taught a few two-day classes on multiple different topics
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://mvla.net/mvhs"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:30%" src="./dist/img/mvhs.png" />
-			                <h3 class="card-title" style = "color: black">CompSci help at MVHS</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I help AP computer science students with their computer science labs
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
-
-			    <a title="" href="http://www.devoxx4kids.org"><div class="col-sm-6 col-md-4 col-lg-3">
-			        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
-			            <div class="card-block">
-			            	<img alt="" style="width:50%" src="./dist/img/devoxx4kids.png" />
-			                <h3 class="card-title" style = "color: black">Devoxx4Kids</h3>
-			                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
-			                    I lead various classes on iOS App Development in different languages
-			                </div>
-			            </div>
-			        </div>
-			    </div></a>
+			<div style = "padding-left: 2%; padding-right: 2%; text-align: center">
+				<div class="table-responsive">
+				  <table class="table">
+				  	<tbody>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="https://www.oracle.com/java/javaone4kids.html"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:60%" src="./dist/img/javaone.png" />
+							                <h3 class="card-title" style = "color: black">Oracle JavaOne4Kids</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I taught 100 young disadvantaged students how to develop games using Java
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://www.troop103losaltos.org"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:15%" src="./dist/img/boyScouts.png" />
+							                <h3 class="card-title" style = "color: black">Webmaster for Troop 103</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I created a new website for my troop to organize all resources
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="https://www.siliconvalley-codecamp.com"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:31%" src="./dist/img/svcc.png" />
+							                <h3 class="card-title" style = "color: black">Silicon Valley Code Camp</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I have been teaching at Silicon Valley Code Camp for the past four years
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  		<tr>
+				  			<td>
+				  				<a title="" href="https://coderdojo.com"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:17%" src="./dist/img/coderDojo.png" />
+							                <h3 class="card-title" style = "color: black">Silicon Valley CoderDojo</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                I taught a few two-day classes on multiple different topics
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://mvla.net/mvhs"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:30%" src="./dist/img/mvhs.png" />
+							                <h3 class="card-title" style = "color: black">CompSci help at MVHS</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I help AP computer science students with their computer science labs
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  			<td>
+				  				<a title="" href="http://www.devoxx4kids.org"><div style="min-width: 500px; max-width: 1000px">
+							        <div class="card experience" style="background-color: #FFFFFF" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';">
+							            <div class="card-block">
+							            	<img alt="" style="width:50%" src="./dist/img/devoxx4kids.png" />
+							                <h3 class="card-title" style = "color: black">Devoxx4Kids</h3>
+							                <div class="card-text" style = "color: black; line-height: 2.5ex; height: 5ex;">
+							                    I lead various classes on iOS App Development in different languages
+							                </div>
+							            </div>
+							        </div>
+							    </div></a>
+				  			</td>
+				  		</tr>
+				  	</tbody>
+				  </table>
+				</div>
 			</div>
 			<br>
 		</div>
