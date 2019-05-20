@@ -50,14 +50,14 @@
 		    Password : "mvhsseniorcheckout",
 		    To : value[4],
 		    From : "mvhs.seniorcheckout@mvla.net",
-		    Subject : "UPDATED | IMPORTANT SENIOR CHECKOUT INFORMATION | ACTION REQUIRED",
+		    Subject : "IMPORTANT SENIOR CHECKOUT INFORMATION | ACTION REQUIRED",
 		    Body : getMessage(value)
 		}).then(
   			message => console.log(message)
 		);
 	}
 	function getMessage(value) {
-		var body = "Dear " + value[3] + " " + value[2] + ",<br><br><b>Please disregard the previous email.</b><br><br> Senior Checkout is quickly approaching (Weds., June 5)! In order for you to receive your graduation cap & gown and to participate in the Graduation Ceremony, <u>every senior must</u> successfully <u>complete</u> the <u>checkout</u> process.<br><br>";
+		var body = "Dear " + value[3] + " " + value[2] + ",<br><br>Senior Checkout is quickly approaching (Weds., June 5)! In order for you to receive your graduation cap & gown and to participate in the Graduation Ceremony, <u>every senior must</u> successfully <u>complete</u> the <u>checkout</u> process.<br><br>";
 
 		if (value[5] !== "" && value[6] !== "" && value[7] !== "" && value[8] !== "" && value[9] === "") {
 			body += "Congratulations you have completed the requirements for Senior Check-out! Please report to the “EXPRESS CHECK-OUT” line at the theater steps on Senior Check-out Day, Wednesday June 5, 2019 at 9:45 AM to receive your ticket to claim your cap & gown. <br><br> <i> Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th!</i> <br><br> Thank you! <br> MVHS Administration";
