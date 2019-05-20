@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MVHS Senior Checkout</title>
+</head>
+<body>
+	<button onclick="runEmails()">RUN</button>
+	<p id="counter">Emails Sent: 0</p>
+</body>
+
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script type="text/javascript">
+	async function getData() {
+		data = await fetch("https://sheets.googleapis.com/v4/spreadsheets/1iUMpueUu7Jwk2pifeYJA-JO9hv3M-hJj5JJJY66qIfA/values/Sheet1?key=AIzaSyBxlIczwpF3A4BLXNlhVuQ0QBaFkY4FBqQ");
+		data = await data.json();
+		return data;
+	}
+	function runEmails() {
+		getData().then(async function(data) {
+			data = data.values;
+			data.shift();
+			count = 1;
+			for (let val of data) {
+				for (let i = 0; i < val.length; i++) {
+					if (i != 2 && i != 3) {
+						val[i] = val[i].toLowerCase().trim();
+					}
+				}
+				counter.innerHTML = "Emails Sent: " + count + "/" + data.length;
+				count++;
+				await sendEmail(val)
+
+				if (count % 50 == 0) {
+					counter.innerHTML = "(paused, will resume soon) Emails Sent: " + count + "/" + data.length;
+					await wait(10 * 60);
+				}
+				
+			}
+		})
+	}
+
+	function wait(seconds) {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => resolve(), seconds * 1000);
+		});
+	}
+	
+	function sendEmail(value) {
+
+		return Email.send({
+		    Host : "smtp.gmail.com",
+		    Username : "mvhs.seniorcheckout@mvla.net",
+		    Password : "mvhsseniorcheckout",
+		    To : value[4],
+		    From : "mvhs.seniorcheckout@mvla.net",
+		    Subject : "IMPORTANT SENIOR CHECKOUT INFORMATION | ACTION REQUIRED",
+		    Body : getMessage(value)
+		}).then(
+  			message => console.log(message)
+		);
+	}
+	function getMessage(value) {
+		var body = "Dear " + value[3] + " " + value[2] + ",<br><br>Senior Checkout is quickly approaching (Weds., June 5)! In order for you to receive your graduation cap & gown and to participate in the Graduation Ceremony, <u>every senior must</u> successfully <u>complete</u> the <u>checkout</u> process.<br><br>";
+
+		if (value[5] !== "" && value[6] !== "" && value[7] !== "" && value[8] !== "" && value[9] === "") {
+			body += "Congratulations you have completed the requirements for Senior Check-out! Please report to the “EXPRESS CHECK-OUT” line at the theater steps on Senior Check-out Day, Wednesday June 5, 2019 at 9:45 AM to receive your ticket to claim your cap & gown. <br><br> <i> Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th!</i> <br><br> Thank you! <br> MVHS Administration";
+		} else {
+			if (value[5] === "") {
+			 body += "Our records indicate that you are missing one or more items from the <b><i>College & Career Center</i></b>. Please follow up with the College & Career Center coordinators to complete the process.<br><br>";
+			}
+			if (value[6] === "") {
+				 body += "Our records indicate that you are missing one or more items from the <b><i>Finance Office</i></b>. Please follow up with the Finance Office to complete the process.<br><br>";
+			}
+			if (value[7] === "") {
+				 body += "Our records indicate that you are missing one or more items from the <b><i>Library</i></b>. Please follow up with the Librarian or Library Assistant to complete the process.<br><br>";
+			}
+			if (value[8] === "") {
+				 body += "Our records indicate that you are missing one or more items from the <b><i>Textbook Center (TBC)</i></b>. Please follow up with the Librarian or Library Assistant to complete the process.<br><br>";
+			} 
+			if (value[9] !== "") {
+				 body += "Our records indicate that you will need to submit the <b><i>Long Form for Grade Verification</i></b> before checking out. Please follow up with <b>your Counselor</b> to complete the process and ensure to bring this form with you on check-out day.<br><br>";
+			}
+			body += "Not sure if your checked-out or what you are missing? Log into the Senior Checkout App, <a href='https://url.mvhs.io/#/'>click here</a>, log in with your MVLA account, and go to 'Senior Portal' <i><br><br> Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th!</i><br><br> Thank you!<br>MVHS Administration";
+		}
+		return body;
+	}
+
+</script>
+</html>
