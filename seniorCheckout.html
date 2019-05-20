@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MVHS Senior Checkout</title>
+	<title>MVHS Senior Checkout</title>
 </head>
 <body>
 	<button onclick="runEmails()">RUN</button>
 	<p id="counter">Emails Sent: 0</p>
 </body>
-<script src="https://smtpjs.com/v3/smtp.js" />
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
 	async function getData() {
 		data = await fetch("https://sheets.googleapis.com/v4/spreadsheets/1gZLCM0n2FzMVeQujhtBx_B8zvbLlwJkHRz7K_OifdhU/values/Sheet1?key=AIzaSyBxlIczwpF3A4BLXNlhVuQ0QBaFkY4FBqQ");
