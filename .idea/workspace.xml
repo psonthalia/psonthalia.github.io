@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee989ed6-dfcf-44a3-9c80-f415c315be43" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paran_Sonthalia_Resume.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Paran_Sonthalia_Resume.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paran_Sonthalia_Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Paran_Sonthalia_Resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="ee989ed6-dfcf-44a3-9c80-f415c315be43" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
       <workItem from="1503022632446" duration="47000" />
       <workItem from="1503029214777" duration="2930000" />
       <workItem from="1503109539068" duration="44000" />
-      <workItem from="1566537456978" duration="1514000" />
+      <workItem from="1566537456978" duration="1726000" />
     </task>
     <servers />
   </component>
