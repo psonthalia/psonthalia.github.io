@@ -9912,6 +9912,144 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 5px;
 }
 
+.anchor {
+  display: block; 
+  position: absolute; 
+  top: -45px;
+}
+
+.mainTopSection {
+  width: 100%; 
+  background-color: #f4f4f4; 
+  padding-top: 70px; 
+  padding-bottom: 70px; 
+  overflow: auto;
+}
+
+.textMainTopSection {
+  color: #000000; 
+  text-align: center;
+}
+
+.logoMainTopSection {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.coverImageMainTopSection {
+  width: 70%; 
+  border:20px; 
+  margin-right: auto; 
+  margin-left: auto;
+  display: block;
+}
+
+.aboutMeHeader {
+  color: white; 
+  text-align: center
+}
+
+.aboutMeResume {
+  color: white; 
+  display: inline-block; 
+  text-decoration: underline; 
+  font-weight:200;
+}
+
+.blackDiv {
+  padding-top: 10px; 
+  padding-bottom: 20px; 
+  width: 100%; 
+  background-color: #292929; 
+  display: inline-block; 
+  max-height: 1000px; 
+  overflow: scroll;
+}
+
+.blackDivImage {
+  width: 50%; 
+  max-width: 300px; 
+  border:0; 
+  margin-left: auto;
+}
+
+.blackDivText {
+  padding-right: 10%; 
+  padding-left: 10%; 
+  color: white; 
+  font-size: 20px; 
+  font-weight: 200;
+}
+
+.blackDivHyperlink {
+  color: white !important; 
+  text-decoration: underline;
+}
+
+.blackDivHeader {
+  color: white; 
+  text-align: center;
+  text-decoration: underline;
+}
+
+.blackDivHeaderWrapper {
+  color: white; 
+  text-decoration: underline;
+}
+
+.grayDiv {
+  width: 100%; 
+  background-color: #f4f4f4; 
+  position: relative; 
+  height: auto; 
+  min-height: 100% !important;
+}
+
+.grayDivCard {
+  margin-right: 10px; 
+  margin-bottom: 10px;
+}
+
+.grayDivCardImage {
+  width:100px; 
+  float: right;
+}
+
+.divHeader {
+  color: #000000; 
+  text-align: center;
+}
+
+.cardInnerContainer {
+  padding-left: 2%; 
+  padding-right: 2%; 
+  text-align: center;
+}
+
+.cardHeader {
+  color: black;
+}
+
+.cardText {
+  color: black; 
+  line-height: 2.5ex; 
+  height: 5ex;
+}
+
+.whiteDiv {
+  width: 100%; 
+  background-color: #FFFFFF; 
+  position: relative; 
+  height: auto; 
+  min-height: 100% !important;
+}
+
+.whiteDivCard {
+  background-color: #f4f4f4; 
+  margin-right: 10px; 
+  margin-bottom: 10px
+}
+
 @media only screen and (max-width: 1026px) {
     #leftNav {
         display: none;
@@ -9948,18 +10086,6 @@ a.text-dark:hover, a.text-dark:focus {
         float: right;
         padding-left: 20px;
         padding-right: 20px;
-    }
-}
-@media only screen {
-    .card experience {
-        height: 200px;
-        width: 380px;
-    }
-}
-@media only screen {
-    .card portfolio {
-        height: 500px;
-        width: 380px;
     }
 }
 @media only screen {
