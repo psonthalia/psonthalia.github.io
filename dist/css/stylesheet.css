@@ -14,14 +14,23 @@
 }
 
 .cardImage {
-  height:100px;
-  margin-top: 5px;
+  width:100%;
 }
 
-.cardAwardImage {
-  height:100px;
-  margin-left: 100px; 
-  margin-top: 5px;
+.cardLeftDiv {
+  height: 100%;
+  width: 28%;
+  float: left;
+  display: inline-block;
+  margin-left: 2%;
+}
+
+.cardRightDiv {
+  height: 100%;
+  width: 70%;
+  float: left;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .anchor {
@@ -49,7 +58,7 @@
 }
 
 .coverImageMainTopSection {
-  width: 70%; 
+  width: 50%; 
   border:20px; 
   margin-right: auto; 
   margin-left: auto;
@@ -69,17 +78,17 @@
 }
 
 .blackDiv {
-  padding-top: 10px; 
-  padding-bottom: 20px; 
+  padding-top: 0px; 
+  padding-bottom: 45px; 
   width: 100%; 
   background-color: #292929; 
   display: inline-block; 
-  max-height: 1000px; 
-  overflow: scroll;
+  overflow: auto;
+  display: flex;
 }
 
 .blackDivImage {
-  width: 50%; 
+  width: 100%; 
   max-width: 300px; 
   border:0; 
   margin-left: auto;
@@ -166,6 +175,31 @@
     #leftNav {
         display: none;
     }
+    .cardLeftDiv {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .cardRightDiv {
+      width: 100%;
+      height: 150px;
+    }
+    .cardImage {
+      width: 50%;
+    }
+    .blackDiv {
+      display: block !important;
+    }
+    .blackDivImage {
+      text-align: center;
+      margin: auto !important;
+    }
+    .leftDiv {
+        width: 100%;
+        text-align: center;
+    }
+    .rightDiv {
+      width: 100%;
+    }
 }
 @media only screen and (min-width: 1026px) {
     #leftDiv {
@@ -177,7 +211,7 @@
     #leftDiv1 {
         width: 50%;
         float: left;
-        padding-top: 13%;
+        padding-top: 4%;
     }
 }
 @media only screen and (min-width: 1026px) {
