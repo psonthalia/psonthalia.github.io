@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Tutorials &amp; writeups — Paran Sonthalia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="A small archive of programming tutorials Paran Sonthalia wrote for high-school students between 2016 and 2019." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    background: #ebf0f2;
+    color: #13212a;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    scroll-behavior: smooth;
+  }
+  * { box-sizing: border-box; }
+  body { overflow-x: hidden; }
+
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: radial-gradient(#c4d0d5 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.35;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @keyframes pn-dash { to { stroke-dashoffset: -40; } }
+  @keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .4; transform: scale(1.5); } }
+  @keyframes float-y { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+
+  ::selection { background: #d36b6e44; color: #13212a; }
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #b6c5cb; border: 3px solid #ebf0f2; border-radius: 8px; }
+  ::-webkit-scrollbar-thumb:hover { background: #1a558f; }
+
+  main { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="site/data.jsx"></script>
+<script type="text/babel" src="site/theme.jsx"></script>
+<script type="text/babel" src="site/tutorials.jsx"></script>
+
+<script type="text/babel" data-presets="react">
+(function() {
+  const { TutorialsNav, TutorialsPage } = window;
+
+  function App() {
+    return (
+      <>
+        <TutorialsNav />
+        <main>
+          <TutorialsPage />
+        </main>
+      </>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+})();
+</script>
+</body>
+</html>
