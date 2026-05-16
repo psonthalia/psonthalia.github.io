@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="Probe">
+  <title>Probe</title>
+  <defs>
+    <linearGradient id="probeBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16181d"/>
+      <stop offset="0.55" stop-color="#101115"/>
+      <stop offset="1" stop-color="#0a0b0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" fill="url(#probeBg)"/>
+  <g fill="none" stroke="#5b8def" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="89.5" y1="38" x2="89.5" y2="116"/>
+    <line x1="65" y1="62.5" x2="89.5" y2="62.5"/>
+    <line x1="58.5" y1="82.5" x2="89.5" y2="82.5"/>
+    <line x1="65" y1="103" x2="89.5" y2="103"/>
+  </g>
+  <circle cx="89.5" cy="134" r="8.8" fill="#5b8def"/>
+</svg>

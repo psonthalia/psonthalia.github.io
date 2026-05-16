@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="InterviewDen">
+  <title>InterviewDen</title>
+  <defs>
+    <radialGradient id="ivGlow" cx="0.5" cy="0.46" r="0.62">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.22"/>
+      <stop offset="0.45" stop-color="#3b82f6" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="180" height="180" fill="#0a0a0d"/>
+  <rect width="180" height="180" fill="url(#ivGlow)"/>
+  <g transform="translate(34.8 32) scale(0.684)">
+    <path d="M28 144 L28 72 Q28 24 80 24 Q132 24 132 72 L132 144" fill="none" stroke="#eef1f6" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="62" y="90" width="10" height="30" rx="5" fill="#3b82f6"/>
+    <rect x="75" y="72" width="10" height="48" rx="5" fill="#3b82f6"/>
+    <rect x="88" y="84" width="10" height="36" rx="5" fill="#3b82f6"/>
+  </g>
+</svg>
