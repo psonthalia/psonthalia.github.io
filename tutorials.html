@@ -1,138 +1,296 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Paran Sonthalia</title>
+<meta charset="UTF-8" />
+<title>Tutorials &amp; writeups — Paran Sonthalia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="A small archive of programming tutorials Paran Sonthalia wrote for high-school students between 2016 and 2018 — React, Swift, Objective-C, Unity, JavaScript, and Java." />
+<link rel="canonical" href="https://paransonthalia.com/tutorials.html" />
 
-    <link rel="icon" href="mangoappsfavicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="mangoappsfavicon.ico" type="image/x-icon" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./dist/css/bootstrap.css" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Tutorials &amp; writeups — Paran Sonthalia" />
+<meta property="og:description" content="Six hand-rolled programming tutorials, written 2016–2018 for high-school students. Free to download." />
+<meta property="og:url" content="https://paransonthalia.com/tutorials.html" />
+<meta property="og:image" content="https://paransonthalia.com/assets/img/favicon/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#1a558f" />
+<meta name="theme-color" content="#ebf0f2" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/site.css" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68870135-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-68870135-4');
+</script>
 </head>
+<body>
 
-<body style="max-width: 100%; overflow-x: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html#home">Paran Sonthalia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" style="">
-            <ul class="navbar-nav mr-auto"></ul>
-            <form class="form-inline my-2 my-lg-0">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./tutorials.html">Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/Xcelerate" target="_blank" rel="noopener noreferrer">Xcelerate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.de-waste.com" target="_blank" rel="noopener noreferrer">DeWaste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.mangoap.com" target="_blank" rel="noopener noreferrer">Mango Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./resume.html">Resume</a>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </nav>
-
-    <div style="width: 100%; background-color: #f4f4f4; position: relative; height: auto; min-height: 100% !important;">
-        <br />
-        <h2 style="color: #000000; text-align: center;">Tutorials</h2>
-        <div style="padding-left: 2%; padding-right: 2%; text-align: center">
-            <div class="row no-gutters">
-                <div class="text-center col-md-4 table-cell" >
-                    <div class="card tutorial" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';" style="margin-right: 10px; margin-bottom: 10px">
-                        <div class="card-block">
-                            <img alt="Unable to load image" class="cardImage" src="./reactjs.png" />
-                            <h3 class="card-title" style="color: black">Building your game with ReactJS</h3>
-                            <div class="card-text" style="color: black; line-height: 2.5ex; height: 20ex;">
-                                In this tutorial you will make a space shooter game using ReactJS! ReactJS enables you to insert JavaScript into your HTML code, so the possibilities are endless. ReactJS was created by Facebook and is used by tons of large companies, including Tesla, Twitter, Walmart, Skype, and many more.
-                            </div>
-                            <a href="./dist/tutorials/react_js_tutorial.zip" class="btn btn-primary" style="margin-bottom: 20px" download>Download</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center col-md-4 table-cell">
-                    <div class="card tutorial" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';" style="margin-right: 10px; margin-bottom: 10px">
-                        <div class="card-block">
-                            <img alt="Unable to load image" class="cardImage" src="./xcode.png" />
-                            <h3 class="card-title" style="color: black">Building your first iOS Game using Swift</h3>
-                            <div class="card-text" style="color: black; line-height: 2.5ex; height: 20ex;">
-                                Do you want to learn how to make your very own iOS game? iOS is one of the largest phone platforms out there and the future is going towards mobile apps. Learn how to make your very own mobile game in this tutorial and you can even download it to your phone and show your friends! This tutorial uses Swift, the new and updated language to build iOS apps and games.
-                            </div>
-                            <a href="./dist/tutorials/ios_swift_tutorial.zip" class="btn btn-primary" style="margin-bottom: 20px" download>Download</a> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center col-md-4 table-cell">
-                    <div class="card tutorial" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';" style="margin-right: 10px; margin-bottom: 10px">
-                        <div class="card-block">
-                            <img alt="Unable to load image" class="cardImage" src="./xcode.png" />
-                            <h3 class="card-title" style="color: black">Building your first iOS Game using Objective-C</h3>
-                            <div class="card-text" style="color: black; line-height: 2.5ex; height: 20ex;">
-                                Do you want to learn how to make your very own iOS game? iOS is one of the largest phone platforms out there and the future is going towards mobile apps. Learn how to make your very own mobile game in this tutorial and you can even download it to your phone and show your friends! This tutorial uses Objective-C, the original programming language for iOS apps and games.
-                            </div>
-                            <a href="./dist/tutorials/ios_obj_c_tutorial.zip" class="btn btn-primary" style="margin-bottom: 20px" download>Download</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center col-md-4 table-cell">
-                    <div class="card tutorial" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';" style="margin-right: 10px; margin-bottom: 10px">
-                        <div class="card-block">
-                            <img alt="Unable to load image" class="cardImage" src="./unity.png" />
-                            <h3 class="card-title" style="color: black">Building your first game with Unity</h3>
-                            <div class="card-text" style="color: black; line-height: 2.5ex; height: 20ex;">
-                                Ever wanted to make your own game? Here is your chance! In this tutorial you will learn how to create an amazing game using Unity, you will find out about different tools to build Unity games, and the steps needed to port your game to virtual reality, iOS, Android, and the web. You will learn how to move players, enemies, shoot, change levels, and more. This is a great way to be introduced into the world of Unity games and C#. With all of these resources, you can continue to learn and build bigger and better games at home.
-                            </div>
-                            <a href="https://github.com/psonthalia/JavaOne4Kids2017/archive/master.zip" style="margin-bottom: 20px" class="btn btn-primary" download>Download</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center col-md-4 table-cell">
-                    <div class="card tutorial" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';" style="margin-right: 10px; margin-bottom: 10px">
-                        <div class="card-block">
-                            <img alt="Unable to load image" class="cardImage" src="./javascript.png" />
-                            <h3 class="card-title" style="color: black">Programming for fun with JavaScript</h3>
-                            <div class="card-text" style="color: black; line-height: 2.5ex; height: 20ex;">
-                                By the end of this tutorial you will learn how to program in javascript and add text, color, shapes, and more. You will have a general introduction of programming and how to code in JavaScript. You will learn syntax, usage of functions, different loop types, When you go home you will be able to write programs using in Java-Script and expand your programming knowledge.
-                            </div>
-                            <a href="./dist/tutorials/javascript_tutorial.zip" class="btn btn-primary" style="margin-bottom: 20px" download>Download</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center col-md-4 table-cell">
-                    <div class="card tutorial" onmouseover="this.style.background='#f4f4f4';" onmouseout="this.style.background='white';" style="margin-right: 10px; margin-bottom: 10px">
-                        <div class="card-block">
-                            <img alt="Unable to load image" class="cardImage" src="./java.png" />
-                            <h3 class="card-title" style="color: black">Introduction to Java</h3>
-                            <div class="card-text" style="color: black; line-height: 2.5ex; height: 20ex;">
-                                Java is the number one language used in companies and the corporate world today because of its immense capabilities. But how can you engage new coders using Java? Java has so many capabilities and once this information has been portrayed to new coders, the interest automatically comes. Go through this tutorial to learn about how can you engage new coders to use Java and start learning coding today!
-                            </div>
-                            <a href="./dist/tutorials/java_tutorial.zip" class="btn btn-primary" style="margin-bottom: 20px" download>Download</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<nav class="nav">
+  <a href="index.html" class="brand">
+    <div class="brand__mark" aria-hidden="true">P</div>
+    <div>
+      <div class="brand__t1">paran's corner</div>
+      <div class="brand__t2">of the internet</div>
     </div>
-    <br /><br />
-</body>
+  </a>
 
+  <div class="nav__links" id="nav-links">
+    <a href="index.html">home</a>
+    <a href="index.html#projects">projects</a>
+    <a href="index.html#work">work</a>
+    <a class="active" aria-current="page">tutorials</a>
+    <a href="index.html#contact">contact</a>
+  </div>
+
+  <a href="index.html" class="nav__cta nav__cta--ghost">← back home</a>
+
+  <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+  <section class="thero">
+    <div class="thero__grid">
+      <div>
+        <div class="hero__kicker">📚 from the archives —</div>
+        <h1>Tutorials<br><span class="it">&amp; writeups</span><span class="dot">.</span></h1>
+        <p class="thero__p1">
+          Between 2016 and 2018 I taught a lot of high-schoolers how to program — at <span class="hl">JavaOne4Kids</span>, through the <span class="hl hl--coral">MangoApps summer program</span>, and as a tutor in my own neighborhood. These are the writeups that came out of those classes.
+        </p>
+        <p class="thero__p2">
+          They're frozen in time — Swift was new, Objective-C was still around, React felt like a fad — but the fundamentals haven't moved much. Download what you like; everything is free.
+        </p>
+        <div class="thero__stickers">
+          <span class="sticker" style="--r:-2deg">6 tutorials</span>
+          <span class="sticker sticker--coral" style="--r:2deg">2016 — 2018</span>
+          <span class="sticker sticker--teal" style="--r:-1.5deg">middle &amp; high school</span>
+          <span class="sticker sticker--ochre" style="--r:3deg">free to download</span>
+        </div>
+      </div>
+
+      <div class="thero__right">
+        <div class="note-card">
+          <span class="tape" style="--tr:-5deg; top:-12px; left:34%;">note to reader</span>
+          <div class="note-card__h">quick context</div>
+          <p>These tutorials were written for kids ages 10–18 over a few summers — most around <span class="hl">2017</span>. The screenshots will look old. The Xcode and Unity versions referenced in them <em>are</em> old.</p>
+          <p>I keep them online because students still occasionally ask, and because some of my own first lessons in <em>how to explain a thing</em> came from writing them.</p>
+          <div class="note-card__sign">— paran</div>
+        </div>
+        <div class="note-float">
+          <div class="polaroid" style="--r:-6deg; --pb:30px; width:180px;">
+            <div class="polaroid__img"><img src="/assets/img/logos/codeone.png" alt="JavaOne4Kids tutoring" /></div>
+            <div class="polaroid__cap">javaone4kids, '17</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thero__scribble">
+      <svg class="doodle" viewBox="0 0 200 80" style="width:160px;height:64px;transform:rotate(2deg)" aria-hidden="true">
+        <path class="scribble" d="M5 40 C 60 5, 120 75, 180 30" stroke="#13212a" stroke-width="2.5" fill="none" stroke-linecap="round" />
+        <path d="M172 22 L 182 30 L 170 38 Z" fill="#13212a" />
+      </svg>
+      <span>take what's useful</span>
+    </div>
+  </section>
+
+  <!-- ── TUTORIAL GRID ──────────────────────────────────── -->
+  <section class="thero" style="padding-top:72px">
+    <div class="section-head fade-up">
+      <div class="section-head__row">
+        <div>
+          <div class="kicker">📦 six packages, hand-rolled</div>
+          <h2>The <em>archive.</em></h2>
+          <div class="section-head__sub">Pick a language and download the zip. Each one is self-contained — a step-by-step PDF or markdown writeup, plus example code for the student to start from.</div>
+        </div>
+        <div class="section-head__right">6 total<br>~ 50 MB combined</div>
+      </div>
+    </div>
+    <div class="grid-3">
+      <div class="fade-up">
+        <div class="tut-card" style="--r:-2.5deg; --accent:var(--coral)">
+          <span class="tape" style="--tr:-4deg; left:32%; background:#f0d77e">2018</span>
+          <div class="tut-card__top">
+            <div class="tut-card__logo"><img src="/assets/img/logos/reactjs.png" alt="" /></div>
+            <div>
+              <div class="tut-card__aud">for middle / high school</div>
+              <div class="tags"><span class="tag">#react</span><span class="tag">#javascript</span><span class="tag">#game</span></div>
+            </div>
+          </div>
+          <h3>Building your game with ReactJS</h3>
+          <p class="tut-card__blurb">A space-shooter game, built end-to-end with React. The tutorial was meant to introduce middle- and high-schoolers to component thinking through something that moves and beeps. JSX, state, a tiny game loop.</p>
+          <div class="tut-card__foot">
+            <div class="tut-card__size">~ 8 MB</div>
+            <a class="tut-card__dl" href="/dist/tutorials/react_js_tutorial.zip" download>download zip ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up" style="--d:80ms">
+        <div class="tut-card" style="--r:1.8deg; --accent:var(--navy)">
+          <span class="tape" style="--tr:-4deg; left:32%; background:#d36b6ecc">2017</span>
+          <div class="tut-card__top">
+            <div class="tut-card__logo"><img src="/assets/img/logos/xcode.png" alt="" /></div>
+            <div>
+              <div class="tut-card__aud">for high school</div>
+              <div class="tags"><span class="tag">#swift</span><span class="tag">#ios</span><span class="tag">#game</span></div>
+            </div>
+          </div>
+          <h3>Your first iOS game in Swift</h3>
+          <p class="tut-card__blurb">Build a small iOS game in Swift you can sideload onto your own phone and show your friends. SpriteKit, gestures, simple physics. Written when Swift felt new.</p>
+          <div class="tut-card__foot">
+            <div class="tut-card__size">~ 14 MB</div>
+            <a class="tut-card__dl" href="/dist/tutorials/ios_swift_tutorial.zip" download>download zip ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up" style="--d:160ms">
+        <div class="tut-card" style="--r:-1.2deg; --accent:var(--ink-soft)">
+          <span class="tape" style="--tr:-4deg; left:32%; background:#0c8a8aaa">2016</span>
+          <div class="tut-card__top">
+            <div class="tut-card__logo"><img src="/assets/img/logos/xcode.png" alt="" /></div>
+            <div>
+              <div class="tut-card__aud">for high school</div>
+              <div class="tags"><span class="tag">#objective-c</span><span class="tag">#ios</span><span class="tag">#game</span></div>
+            </div>
+          </div>
+          <h3>Your first iOS game in Objective-C</h3>
+          <p class="tut-card__blurb">Same game, the Objective-C version. Bracket syntax, manual memory thinking, a slower path to the same iPhone home screen. Kept because some people still ask.</p>
+          <div class="tut-card__foot">
+            <div class="tut-card__size">~ 13 MB</div>
+            <a class="tut-card__dl" href="/dist/tutorials/ios_obj_c_tutorial.zip" download>download zip ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="tut-card" style="--r:2deg; --accent:var(--teal)">
+          <span class="tape" style="--tr:-4deg; left:32%; background:#d9a23acc">2017</span>
+          <div class="tut-card__top">
+            <div class="tut-card__logo"><img src="/assets/img/logos/unity.png" alt="" /></div>
+            <div>
+              <div class="tut-card__aud">for high school</div>
+              <div class="tags"><span class="tag">#unity</span><span class="tag">#c#</span><span class="tag">#game</span></div>
+            </div>
+          </div>
+          <h3>Building your first game with Unity</h3>
+          <p class="tut-card__blurb">A full Unity intro: moving players, enemies, shooting, level transitions, and a tour of the editor. Targets iOS, Android, web, and a quick taste of VR. C# for absolute beginners.</p>
+          <div class="tut-card__foot">
+            <div class="tut-card__size">~ on GitHub</div>
+            <a class="tut-card__dl" href="https://github.com/psonthalia/JavaOne4Kids2017/archive/master.zip" target="_blank" rel="noopener noreferrer">on github ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up" style="--d:80ms">
+        <div class="tut-card" style="--r:-1.8deg; --accent:var(--ochre)">
+          <span class="tape" style="--tr:-4deg; left:32%; background:#1a558f88">2018</span>
+          <div class="tut-card__top">
+            <div class="tut-card__logo"><img src="/assets/img/logos/javascript.png" alt="" /></div>
+            <div>
+              <div class="tut-card__aud">for beginners</div>
+              <div class="tags"><span class="tag">#javascript</span><span class="tag">#intro</span></div>
+            </div>
+          </div>
+          <h3>Programming for fun with JavaScript</h3>
+          <p class="tut-card__blurb">A first programming class. Variables, loops, functions, drawing shapes, animating colors. The goal was to make people feel that programming is closer to play than to math.</p>
+          <div class="tut-card__foot">
+            <div class="tut-card__size">~ 4 MB</div>
+            <a class="tut-card__dl" href="/dist/tutorials/javascript_tutorial.zip" download>download zip ↓</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up" style="--d:160ms">
+        <div class="tut-card" style="--r:1.4deg; --accent:var(--forest)">
+          <span class="tape" style="--tr:-4deg; left:32%; background:#3b8c4baa">2017</span>
+          <div class="tut-card__top">
+            <div class="tut-card__logo"><img src="/assets/img/logos/java.png" alt="" /></div>
+            <div>
+              <div class="tut-card__aud">for beginners</div>
+              <div class="tags"><span class="tag">#java</span><span class="tag">#intro</span></div>
+            </div>
+          </div>
+          <h3>Introduction to Java</h3>
+          <p class="tut-card__blurb">An onboarding into Java for students who want to see what 'real' programming languages look like. Strong typing, classes, the public-static-void-main ceremony, then quickly into making things happen.</p>
+          <div class="tut-card__foot">
+            <div class="tut-card__size">~ 5 MB</div>
+            <a class="tut-card__dl" href="/dist/tutorials/java_tutorial.zip" download>download zip ↓</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW TO USE ─────────────────────────────────────── -->
+  <section style="padding:72px var(--pad-x) 56px">
+    <div class="howto">
+      <span class="tape" style="--tr:-3deg; top:-12px; left:3%;">how to use these</span>
+      <div class="howto__grid">
+        <div>
+          <div class="howto__n" style="color:var(--navy)">01.</div>
+          <div class="howto__label">download</div>
+          <p class="howto__text">Click any of the cards above. Each is a small zip with the writeup, slides, and starter code.</p>
+        </div>
+        <div>
+          <div class="howto__n" style="color:var(--coral)">02.</div>
+          <div class="howto__label">unzip &amp; read</div>
+          <p class="howto__text">Start with the README or the PDF inside. Most run between 60 and 90 minutes if you go straight through.</p>
+        </div>
+        <div>
+          <div class="howto__n" style="color:var(--teal)">03.</div>
+          <div class="howto__label">tinker</div>
+          <p class="howto__text">The fun part. Change colors, break things, add your own ideas. That's what these were always for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BACK CTAs ──────────────────────────────────────── -->
+  <div class="cta-grid" style="padding-bottom:64px">
+    <a class="cta cta--ink cta--compact fade-up" href="index.html#contact">
+      <div>
+        <div class="cta__kicker">🐛 found a typo?</div>
+        <div class="cta__title">Let me know.</div>
+        <div class="cta__body">I'll fix it. These deserve to age gracefully.</div>
+      </div>
+      <div class="cta__arrow">→</div>
+    </a>
+    <a class="cta cta--coral cta--compact fade-up" style="--d:100ms" href="index.html">
+      <div>
+        <div class="cta__kicker">↶ back to the rest</div>
+        <div class="cta__title">Return home</div>
+        <div class="cta__body">Projects, work, race log, the usual.</div>
+      </div>
+      <div class="cta__arrow">↗</div>
+    </a>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <span>happy hacking ♡</span>
+  <span class="foot__mid">© PARAN SONTHALIA · MANHATTAN, NY · 2026</span>
+  <span>now, back to the editor →</span>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
 </html>

@@ -1,62 +1,296 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Paran Sonthalia</title>
+<meta charset="UTF-8" />
+<title>Résumé — Paran Sonthalia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Résumé of Paran Sonthalia — Quantitative Developer at Citadel (Index Rebalance desk), UC Berkeley CS & Data Science '22, founder of DeWaste." />
+<link rel="canonical" href="https://paransonthalia.com/resume.html" />
 
-    <link rel="icon" href="mangoappsfavicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="mangoappsfavicon.ico" type="image/x-icon" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Résumé — Paran Sonthalia" />
+<meta property="og:description" content="Quantitative Developer at Citadel · UC Berkeley '22 · founder of DeWaste." />
+<meta property="og:url" content="https://paransonthalia.com/resume.html" />
+<meta property="og:image" content="https://paransonthalia.com/assets/img/favicon/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#ebf0f2" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/site.css" />
 </head>
+<body>
 
-<body style="max-width: 100%; overflow-x: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html#home">Paran Sonthalia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" style="">
-            <ul class="navbar-nav mr-auto"></ul>
-            <form class="form-inline my-2 my-lg-0">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./tutorials.html">Tutorials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/Xcelerate" target="_blank" rel="noopener noreferrer">Xcelerate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.de-waste.com" target="_blank" rel="noopener noreferrer">DeWaste</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://www.mangoap.com" target="_blank" rel="noopener noreferrer">Mango Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./resume.html">Resume</a>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </nav>
-
-    <style type="text/css">
-        .test {
-            width: 100%;
-            height: 94vh;
-            text-align: center;
-        }
-    </style>
-    <div class="test">
-        <iframe src="./Paran_Sonthalia_Resume.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
+<nav class="nav">
+  <a href="index.html" class="brand">
+    <div class="brand__mark" aria-hidden="true">P</div>
+    <div>
+      <div class="brand__t1">paran's corner</div>
+      <div class="brand__t2">of the internet</div>
     </div>
-</body>
+  </a>
 
+  <div class="nav__links" id="nav-links">
+    <a href="index.html">home</a>
+    <a href="index.html#projects">projects</a>
+    <a href="index.html#work">work</a>
+    <a href="tutorials.html">tutorials</a>
+    <a class="active" aria-current="page">résumé</a>
+  </div>
+
+  <div class="r-actions">
+    <button type="button" class="r-print" onclick="window.print()">print / save as PDF</button>
+    <a href="/resume/Paran_Sonthalia_Resume.pdf" download class="nav__cta">download PDF ↓</a>
+  </div>
+
+  <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main class="r-main">
+
+  <header class="r-header">
+    <div class="r-header__row">
+      <div>
+        <div class="kicker">📄 the formal version —</div>
+        <h1>Paran <em>Sonthalia</em><span class="dot">.</span></h1>
+        <div class="r-header__role">Quantitative developer · Citadel · Index Rebalance desk</div>
+      </div>
+      <div class="r-contact">
+        <div><span class="mk">↗</span> <a href="https://paransonthalia.com">paransonthalia.com</a></div>
+        <div><span class="mk">↗</span> <a href="https://github.com/psonthalia" target="_blank" rel="noopener noreferrer">github.com/psonthalia</a></div>
+        <div><span class="mk">↗</span> <a href="https://www.linkedin.com/in/paran-sonthalia-9bba3285/" target="_blank" rel="noopener noreferrer">linkedin/paran-sonthalia</a></div>
+        <div><span class="mk-c">✉</span> <a href="mailto:paran.websiteContact@gmail.com">paran.websiteContact@gmail.com</a></div>
+        <div><span class="mk-c">📍</span> Manhattan, NY</div>
+      </div>
+    </div>
+    <p class="r-intro">
+      Quantitative developer on Citadel's Index Rebalance desk. UC Berkeley '22, Computer Science and Data Science. Co-founder of <span class="hl">DeWaste</span>, a Y-Combinator-grant-funded food-waste startup. I build careful systems by day and run long distances by morning.
+    </p>
+  </header>
+
+  <!-- § 01 EXPERIENCE -->
+  <section class="r-sec">
+    <div class="r-sec__head"><span class="k">§ 01</span><h2>Experience</h2></div>
+    <div class="r-jobs">
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/logos/citadel.png" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">Citadel <span class="badge-now">● now</span></div><div class="r-job__loc">New York</div></div>
+          <div class="r-job__role">Quantitative Developer</div>
+          <div class="r-job__years">2022 — Now</div>
+        </div>
+        <ul class="r-bullets">
+          <li>Quant developer on the Index Rebalance desk — equities team executing systematic rebalances of major equity indices.</li>
+          <li>Own production trading systems; write code that runs in critical hot paths during open and close.</li>
+          <li>Built tooling for desk analytics, post-trade attribution, and pre-trade scenario modeling.</li>
+        </ul>
+      </div>
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/logos/citadel.png" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">Citadel</div><div class="r-job__loc">Chicago</div></div>
+          <div class="r-job__role">SWE Intern</div>
+          <div class="r-job__years">Summer 2021</div>
+        </div>
+        <ul class="r-bullets">
+          <li>Added persistent-disk functionality to Citadel's internal Kubernetes engine.</li>
+          <li>Worked with infrastructure team on operator extensions and reliability tests.</li>
+        </ul>
+      </div>
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/logos/amazon.png" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">Amazon</div><div class="r-job__loc">Seattle (remote)</div></div>
+          <div class="r-job__role">SWE Intern</div>
+          <div class="r-job__years">Summer 2020</div>
+        </div>
+        <ul class="r-bullets">
+          <li>Automated analysis of device-connectivity data across the Echo fleet.</li>
+          <li>Reduced redundant customer-service contacts by surfacing self-heal hints earlier in the flow.</li>
+        </ul>
+      </div>
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/projects/dewaste.png" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">DeWaste</div><div class="r-job__loc">Berkeley</div></div>
+          <div class="r-job__role">Co-founder, CEO</div>
+          <div class="r-job__years">2020 — 2022</div>
+        </div>
+        <ul class="r-bullets">
+          <li>Co-founded a startup tackling post-consumer food waste in dining institutions.</li>
+          <li>Designed and shipped IoT hardware (camera + load cells) plus the web dashboard customers used.</li>
+          <li>Y Combinator Startup School grant recipient (2019). Pitched to and worked with dining services at multiple universities.</li>
+          <li>Hired and managed a small team; ran sales, hardware, software, and fundraising.</li>
+        </ul>
+      </div>
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/logos/pivotal.jpg" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">Pivotal</div><div class="r-job__loc">Palo Alto</div></div>
+          <div class="r-job__role">SWE Intern</div>
+          <div class="r-job__years">Summer 2019</div>
+        </div>
+        <ul class="r-bullets">
+          <li>On the Release Engineering team; automated portions of the shipping pipeline for a new release.</li>
+          <li>Wrote tooling that's still in use for build-promotion gating.</li>
+        </ul>
+      </div>
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/logos/mangoapps.png" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">MangoApps</div><div class="r-job__loc">Remote</div></div>
+          <div class="r-job__role">Founder, summer programs</div>
+          <div class="r-job__years">2017 — 2019</div>
+        </div>
+        <ul class="r-bullets">
+          <li>Ran a summer internship program for high-school engineers; built a team of 4–6 students each year.</li>
+          <li>We shipped a new app or tool every summer — game, tutoring marketplace, school directory, social.</li>
+        </ul>
+      </div>
+      <div class="r-job">
+        <div class="r-job__row">
+          <div class="r-job__logo"><img src="/assets/img/logos/leanData.png" alt="" /></div>
+          <div class="r-job__cobox"><div class="r-job__co">LeanData</div><div class="r-job__loc">Sunnyvale</div></div>
+          <div class="r-job__role">SWE Intern</div>
+          <div class="r-job__years">Summer 2017</div>
+        </div>
+        <ul class="r-bullets">
+          <li>Designed and developed multiple new capabilities on LeanData's lead-routing product.</li>
+          <li>First professional dev role; learned to read a large existing codebase.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- § 02 EDUCATION -->
+  <section class="r-sec">
+    <div class="r-sec__head"><span class="k">§ 02</span><h2>Education</h2></div>
+    <div class="r-job">
+      <div class="r-edu">
+        <div class="r-edu__b">B</div>
+        <div class="r-job__cobox"><div class="r-job__co">UC Berkeley</div><div class="r-job__loc">Berkeley, CA</div></div>
+        <div class="r-job__role">B.A. Computer Science &amp; Data Science</div>
+        <div class="r-job__years">Class of '22</div>
+      </div>
+      <ul class="r-edu-bullets">
+        <li>Taught Computer Science Mentors (CSM) sections; mentored students through intro CS courses.</li>
+        <li>Coursework: data structures &amp; algorithms, OS, computer architecture, machine learning, probability, optimization, statistical methods.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- § 03 SELECTED PROJECTS -->
+  <section class="r-sec">
+    <div class="r-sec__head"><span class="k">§ 03</span><h2>Selected projects</h2></div>
+    <div class="r-proj-grid">
+      <div class="r-proj">
+        <div class="r-proj__img"><img src="/assets/img/projects/dewaste.png" alt="" /></div>
+        <div class="r-proj__body">
+          <div class="r-proj__top"><div class="r-proj__t">DeWaste</div><div class="r-proj__y">2020 — 2022</div></div>
+          <div class="r-proj__r">Co-founder, CEO</div>
+          <p class="r-proj__x">Food-waste startup. Worked with dining institutions to measure and reduce post-consumer waste. YC Startup School grant.</p>
+        </div>
+      </div>
+      <div class="r-proj">
+        <div class="r-proj__img"><img src="/assets/img/projects/xcelerate.png" alt="" /></div>
+        <div class="r-proj__body">
+          <div class="r-proj__top"><div class="r-proj__t">Xcelerate</div><div class="r-proj__y">2020 — Now</div></div>
+          <div class="r-proj__r">Creator</div>
+          <p class="r-proj__x">YouTube channel documenting endurance training — running, biking, race prep. Long-form, no edits for the sake of it.</p>
+        </div>
+      </div>
+      <div class="r-proj">
+        <div class="r-proj__img"><img src="/assets/img/projects/drone.png" alt="" /></div>
+        <div class="r-proj__body">
+          <div class="r-proj__top"><div class="r-proj__t">Drone (from scratch)</div><div class="r-proj__y">2019</div></div>
+          <div class="r-proj__r">Hardware</div>
+          <p class="r-proj__x">Designed and CAD'd custom arms, landing gear, and hub. Sourced parts, built a photography drone end-to-end.</p>
+        </div>
+      </div>
+      <div class="r-proj">
+        <div class="r-proj__img"><img src="/assets/img/projects/trashcam.png" alt="" /></div>
+        <div class="r-proj__body">
+          <div class="r-proj__top"><div class="r-proj__t">TrashCam</div><div class="r-proj__y">2019</div></div>
+          <div class="r-proj__r">Hackathon</div>
+          <p class="r-proj__x">Self-sorting trash can. Computer vision + servos to route landfill, recycling, and compost in real time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="r-note">See <a class="wavy" href="index.html#projects">paransonthalia.com/projects</a> for the full archive of 14+.</div>
+  </section>
+
+  <!-- § 04 SKILLS -->
+  <section class="r-sec">
+    <div class="r-sec__head"><span class="k">§ 04</span><h2>Skills</h2></div>
+    <div class="r-skills">
+      <div class="r-skill">
+        <div class="r-skill__g">languages</div>
+        <ul><li><span class="d">·</span>C++</li><li><span class="d">·</span>Python</li><li><span class="d">·</span>Go</li><li><span class="d">·</span>JavaScript / TypeScript</li><li><span class="d">·</span>Swift</li><li><span class="d">·</span>Java</li><li><span class="d">·</span>SQL</li></ul>
+      </div>
+      <div class="r-skill">
+        <div class="r-skill__g">systems</div>
+        <ul><li><span class="d">·</span>Low-latency design</li><li><span class="d">·</span>Distributed systems</li><li><span class="d">·</span>Kubernetes</li><li><span class="d">·</span>Linux</li></ul>
+      </div>
+      <div class="r-skill">
+        <div class="r-skill__g">markets</div>
+        <ul><li><span class="d">·</span>Equities index trading</li><li><span class="d">·</span>Rebalance mechanics</li><li><span class="d">·</span>Post-trade analytics</li></ul>
+      </div>
+      <div class="r-skill">
+        <div class="r-skill__g">frontend</div>
+        <ul><li><span class="d">·</span>React</li><li><span class="d">·</span>Next.js</li><li><span class="d">·</span>HTML/CSS</li></ul>
+      </div>
+      <div class="r-skill">
+        <div class="r-skill__g">hardware</div>
+        <ul><li><span class="d">·</span>Embedded prototyping</li><li><span class="d">·</span>CAD (Fusion 360)</li><li><span class="d">·</span>Soldering, harnessing</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- § 05 HONORS & EXTRAS -->
+  <section class="r-sec">
+    <div class="r-sec__head"><span class="k">§ 05</span><h2>Honors &amp; extras</h2></div>
+    <div class="r-extras">
+      <div>
+        <div class="r-extras__h">recognition</div>
+        <ul>
+          <li><strong>Y Combinator.</strong> Startup School 2019 grant recipient (DeWaste)</li>
+          <li><strong>Eagle Scout.</strong> Troop 103, Los Altos, CA</li>
+          <li><strong>Cal Hacks Fellowship.</strong> 5.0 cohort</li>
+          <li><strong>Press.</strong> 12+ writeups, mostly for DeWaste — see paransonthalia.com/press</li>
+        </ul>
+      </div>
+      <div>
+        <div class="r-extras__h">endurance</div>
+        <ul>
+          <li><strong>100-mile ultra.</strong> Big Bear, CA — 100 mi.</li>
+          <li><strong>SF Ultra.</strong> San Francisco, CA — 52.4 mi.</li>
+          <li><strong>JFK 50.</strong> Washington Co., MD — 50 mi.</li>
+          <li><strong>Ironman.</strong> Texas — 140.6 mi.</li>
+          <li><strong>Ironman.</strong> Arizona — 140.6 mi.</li>
+          <li><strong>Half Ironman.</strong> Luxembourg — 70.3 mi.</li>
+        </ul>
+        <div class="r-extras__note">Training logs at <a class="wavy" href="https://youtube.com/c/Xcelerate" target="_blank" rel="noopener noreferrer">youtube.com/Xcelerate</a>.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot r-footer">
+  <span>last updated · may '26</span>
+  <span class="foot__mid">© PARAN SONTHALIA · MANHATTAN, NY · 2026 · ONE PAGE BUT IT'S A LONG PAGE</span>
+  <span>references on request →</span>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
 </html>
